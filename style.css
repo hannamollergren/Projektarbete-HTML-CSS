@@ -77,31 +77,44 @@
     background-size: cover;
     background-position: center;
     color: white;
-    opacity: 0.5;
-  }
-
-  .boxes1 > :last-child {
-    text-align: left;
     
   }
+
+  .boxes3 > :first-child {
+    background: url(image-start/planets.jpeg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    
+  }
+
+  .boxes1 > :last-child {text-align: left;}
+  .boxes3 > :last-child {text-align: left;}
   
   .boxes {
     display: grid;
-    grid-gap: 1px;
+    grid-gap: 2px;
     min-height: 400px;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* När bilden är 400px går box över till en kolumn*/
   }
   
   .boxes1 {
     display: grid;
-    grid-gap: 1px;
+    grid-gap: 2px;
     min-height: 400px;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* När bilden är 400px går box över till en kolumn*/
   }
 
   .boxes2 {
     display: grid;
-    grid-gap: 1px;
+    grid-gap: 2px;
+    min-height: 400px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* När bilden är 400px går box över till e kolumn*/
+  }
+
+  .boxes3 {
+    display: grid;
+    grid-gap: 2px;
     min-height: 400px;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* När bilden är 400px går box över till e kolumn*/
   }
@@ -125,6 +138,9 @@
     .showcase h1 {
       font-size: 2.5em;
     }
+
+    .boxes1 > :last-child {padding-top: 0;}
+    .boxes3 > :last-child {padding-top: 0;}
   
   }
   
