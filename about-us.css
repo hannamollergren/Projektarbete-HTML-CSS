@@ -1,0 +1,152 @@
+*{
+  padding: 0px; margin: 0px;
+  box-sizing: border-box;
+}
+/* nytt innehåll */
+body{ 
+  font-size: 1.0em;
+  margin: 0;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  background: brown;
+  color: white;
+  line-height: 1.8;
+}
+/* ny */
+img {
+  display: block; /* block för det lägger allt efter på ny rad */
+  width: 100%;
+  height: auto;
+}
+#showcase .content-wrap,
+#section-a .content-wrap {
+  padding: 0 1.5em;
+}
+
+
+/* Section1 */
+
+#section-a {
+  background: white;
+  color: black;
+  padding-bottom: 2em;
+}
+
+/* Section2 */
+
+#section-b {
+  padding: 2em 1em 1em;
+}
+
+#section-b ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#section-b li {
+  margin-bottom: 1em;
+  background: #fff;
+  color: #333;
+}
+
+.card-content {
+  padding: 1.5em;
+}
+
+/* Section3 */
+
+#section3 {
+  background: #fff;
+  color: #333;
+  padding: 2em;
+}
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+header, footer{
+  background-color: #3f70a4;
+  color: white;
+}
+/*
+.container {
+  font-size: 1.0em;
+  display: flex;
+  flex-direction: column;
+}
+.container article > *{
+  flex-direction: column;
+}
+*/
+.container footer { flex: 0 0 4em; }
+.container header { flex: 0 0 4em; }
+.container main { flex: 0 0 2em; }
+/*Navigation*/
+.nav {
+  font-family: 'Open Sans', sans-serif;
+  border-bottom: 1px solid #EAEAEB;
+  text-align: right;
+  height: 70px;
+  line-height: 70px;
+}
+.menu {
+  margin: 0 3em 0 0;
+}
+.menu a {
+  clear: right;
+  text-decoration: none;
+  color: white;
+  margin: 0 10px;
+  line-height: 70px;
+}
+label {
+  margin: 0 40px 0 0;
+  font-size: 26px;
+  line-height: 70px;
+  display: none;
+  width: 26px;
+  float: right;
+}
+#toggle {
+  display: none;
+}
+@media only screen and (max-width: 500px) {
+  
+  label {
+      display: block;
+      cursor: pointer;
+  }
+  .menu {
+      text-align: center;
+      width: 100%;
+      display: none;   
+  }
+  .menu a {
+      display: block;
+      border-bottom: 1px solid white;
+      background-color: #3f70a4;
+      margin: 0;
+  }
+  #toggle:checked + .menu {
+      display: block;
+  }
+/* Text */
+p{
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  margin-left: 2em;
+  margin-right: 2em;
+  line-height: 1.7em;
+  padding: 1em 1em;
+}
+h1, h2, h3, h4, h5, h6{
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  padding: 0.5em;
+}
+h1{
+  font-size:3em;
+}
+}
