@@ -1,14 +1,16 @@
 *{
     padding: 0px; margin: 0px;
     box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 a{
     text-decoration: none;
-    color: black;
 }
-body{ 
-    font-size: 1.0em;
-  
+body{
+    color: #3E4756;
 }
 html, body {
     width: 100%;
@@ -16,8 +18,8 @@ html, body {
     margin: 0;
 }
 header, footer{
-    background-color: #3f70a4;
-    color: white;
+    background-color: white;
+    color: #3E4756;
 }
 header{
 z-index: 99;
@@ -37,40 +39,54 @@ z-index: 1;
 .container header { flex: 0 0 4em; }
 .container main { flex: 0 0 2em; }
 
+.footer{
+    background-color: #175384;
+    height: 25vh;
+}
+/*Header*/
 
-
-/*Navigation*/
+/*Logo*/
+.container-logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
 .logo {
-    position: absolute;
-    width: 140px;
-    height: 60px;
-    text-align: center;
-    margin: 10px 0 0 10px;
+    display: inline-block;
+    /*flex-basis: 160px;*/
+    width: 220px;
+    position: relative;
+    margin: 2em 0 1em 0;
+
   }
+/*Navigation*/
 .nav {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 600;
-    text-align: right;
-    line-height: 70px;
-    display: inline;
+    position: relative;
+    font-family: 'Alice', serif;
 }
 .menu {
-    margin: 0 4em 0 4em;
+    display: inline;
     z-index: 100;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 1em;
 }
 .menu a {
-    clear: right;
+    display: inline;
     text-decoration: none;
-    color: white;
-    margin: 0 15px;
-    line-height: 70px;
+    color: #175384;
+    font-size: 1.2em;
+    margin: 0 1.9em;
+    font-weight: lighter;
+    
 }
 .menu a:hover{
     cursor: pointer;
-    background-color: #457fbd;
 }
 label {
-    margin: 0 40px 0 0;
+    margin: 0 2em 0 0;
     font-size: 26px;
     line-height: 70px;
     display: none;
@@ -83,15 +99,15 @@ label {
 
 /* Text */
 p{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     text-align: center;
-    margin-left: 4em;
-    margin-right: 4em;
-    line-height: 1.7em;
-    padding: 1em 1em;
+    margin-left: 2em;
+    margin-right: 2em;
+    line-height: 1.8em;
+
 }
 h1, h2, h3, h4, h5, h6{
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Alice', serif;
     text-align: center;
 }
 h1{
@@ -99,68 +115,147 @@ h1{
 }
 
 
-/*Grid*/
-.grid-header{
-    border: 1px solid black;
-   /* background: url(image/earth.png);*/
+/* Big image */
+.big-image {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas:
+      'image image ';
+  }
+  .big-image1 {
+    grid-area: image;  
+    min-height: 400px;
+    background: url(imageVision/imagevision.jpg);
     background-size: cover;
+    background-position: center;
+    padding: 2em;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
-    margin: 0em 0 3em 0;
-    padding: 3em;
-    height: 80vh;
+  }
+  .box-inside {
+    flex-basis: 100px;
+    padding: 2em; /* Padding inre mellanrummet mellan text och border på varge kolumn */
+    color: white;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    background-color: rgba(216, 138, 162, 0.7);
 }
 .grid-header-text{
-    color: #457fbd ;
-    font-weight: bold;
-    margin-bottom: 1em;
+    color: white;
+    padding: 1em; 
+    font-size: 2em;
 }
-.grid-header-text1{
-    border: 2px solid #457fbd;
-    padding: 0.6em;
+.sub-text p{
+    line-height: 1.4em;
+    margin: 0 0 2em 0;
+}
+.grid-header-text1 a > p{
+    position: relative;  
+    border: 1px solid white;
+    font-size: 1em;
+    background-color: #DEA01E;
+    box-sizing: border-box;
+    border-radius: 5px;
+    color: white;
     display: inline-block;
     text-decoration: none;
-}
-.grid-container{
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: 15em auto;
-    grid-column-gap: 1em;
-    grid-row-gap: 0em;
-    margin: 2em 0em 2em 0em;
-}
-.grid-container > div {
+    padding: 8px 20px;
+    margin-bottom: 1em;
+} 
+
+/* Sub page title*/
+.vision{
     display: flex;
+    flex-direction: row;
     justify-content: center;
-    align-items: center;
-    color: black;
-    font-family: 'Roboto';
-    border: 1px solid black;
+    align-items: flex-end;
+    padding: 2em;
+}
+.vision-title{
+    position: relative;
+    display: inline-block;
+    font-family: 'Alice', serif;
+    font-size: 1.4em;
+    margin-bottom: 0.3em;
+}
+.vision-border{
+    justify-content: center;
+    position: absolute;
+    border: 2px solid #175384;
+    width: 35px;
+    height: 0px;    
+}  
+
+/*Grid*/
+.vision-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));;
+    grid-template-rows: auto;
+    grid-column-gap: 3em;
+    grid-row-gap: 3em;
+    margin: 0 5em 4em 5em;
     
 }
-
-/*Bilder*/
-
+.vision-container > div {
+    border-radius: 5px 5px 0px 0px;
+    position: relative;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    border: 1px solid #3E4756;
+}
+.vision-container h3{
+    text-align: center;
+    font-size: 1.2em;
+    font-family: 'Alice', serif;
+    margin: 1em 0 1em 0;
+    z-index: 500;
+}
+.vision-container p{
+    margin: 0 2em 1em 2em;
+}
+.vision-container img{
+    position: relative;
+    border-radius: 5px 5px 0px 0px;
+    display: block; 
+    width: 100%;
+    object-fit: cover;
+} 
 
 /*Media qu*/
 @media only screen and (max-width: 600px) {
-    label {
+    label{
         display: block;
         cursor: pointer;
     }
-    .menu {
+    .menu{
         text-align: center;
         width: 100%;
         display: none;   
     }
-    .menu a {
+    .menu a{
         display: block;
         border-bottom: 1px solid white;
-        background-color: #3f70a4;
+        color: white;
+        background-color: #175384;
+        padding: 1em;
         margin: 0;
     }
-    #toggle:checked + .menu {
+    #toggle:checked + .menu{
         display: block;
     }
+}
+@media only screen and (max-width: 700px) {
+    .vision-container{
+        margin: 0 0 2em 0;
+        width: 100%;
+}
+    .vision-container > div{
+        border: transparent;
+}
+}
