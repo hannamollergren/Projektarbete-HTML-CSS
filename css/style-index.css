@@ -1,0 +1,352 @@
+* { 
+  box-sizing: border-box; 
+	padding: 0px; margin: 0px;
+}
+
+body {
+	font-family: ‘Alice’, serif;
+  	color: grey;
+}
+
+p {
+	font-family: ‘Open Sans’, serif;
+	color: #3E4756;;
+	font-style: normal;
+	font-weight: normal;
+}
+
+h2 {
+	font-family: ‘Alice’, serif;
+	color:#3E4756;
+	font-style: normal;
+	font-weight: normal;
+	
+}
+
+/* Stor bild top innehåll------------------------------------------------------*/
+/*-----------------------------------------------------------------------------*/
+.box-with-backg-top h2 { color:white; }
+.box-with-backg2 h2 { color:white; }
+.box-with-backg3 h2 { color:white; }
+.box-with-backg4 h2 { color:white; }
+.box-with-backg-top p { color:white; }
+.box-with-backg2 p { color:white; }
+.box-with-backg3 p { color:white; }
+.box-with-backg4 p { color:white; }
+
+.box-with-backg-top {
+	display: flex;
+	min-height: 50vh;
+	background: url(/img/index/top-pic-space.jpg);
+	background-size: cover;
+	background-position: center;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-top: 1.5em;
+	
+}
+
+/* Bakgrund till boxinside, blir transparent vid skalning */
+.box-inside-backg {
+	background:rgba(63, 112, 164, 0.4);
+}
+
+/* Box inuti stor topp-bild */
+.box-inside {
+	display: flex;
+	flex-basis: 250px;
+	color: white;
+	max-width: 500px;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	border-radius: 3px;
+	padding:35px 45px 35px 45px;
+	height: 700px;
+  }
+
+  /* Knapp stylad, ej button */
+  .button {
+	display: flex;
+	font-size: 0.9em;
+	width: 9em;
+	height: 2.9em;
+	color: white;
+	align-items: center;
+	justify-content: center;
+	border-radius: 4px;
+	padding: auto;
+	border: 1px solid white;
+	margin-top: 2.5em;
+}
+/*-----------------------------------------------------------------------------*/
+/* Stor bild top innehåll avslut-----------------------------------------------*/
+
+
+/* Stor bild top innehåll 2------------------------------------------------------*/
+/*-------------------------------------------------------------------------------*/
+.box-with-backg2 {
+	display: flex;
+	min-height: 50vh;
+	background: url(/img/index/astro-copy.svg);
+	background-size: cover;
+	background-position: center;
+	flex-direction: column;
+	align-items: flex-end;
+	justify-content: center;
+	/*padding-right: 5em; */ /*Margin 10 %in box-inside instead */
+}
+
+/* Bakgrund till boxinside, blir transparent vid skalning */
+.box-inside-backg2 {
+	background:rgba(222, 160, 30, 0.7);
+}
+
+/* Box inuti stor topp-bild */
+.box-inside2 {
+	display: flex;
+	flex-basis: 250px;
+	color: white;
+	max-width: 500px;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	border-radius: 3px;
+	padding:35px 45px 35px 45px;
+	height: 700px;
+	margin-right: 10%;
+  }
+
+  /* Knapp stylad, ej button */
+  .button2 {
+	display: flex;
+	font-size: 0.9em;
+	width: 9em;
+	height: 2.9em;
+	color: white;
+	background: #00998E;
+	align-items: center;
+	justify-content: center;
+	border-radius: 4px;
+	padding: auto;
+	border: 1px solid white;
+	margin-top: 2.5em;
+}
+/*-----------------------------------------------------------------------------*/
+/* Stor bild top innehåll avslut 2---------------------------------------------*/
+
+
+
+/* Stor bild top innehåll 3------------------------------------------------------*/
+/*-------------------------------------------------------------------------------*/
+.box-with-backg3 {
+	display: flex;
+	min-height: 50vh;
+	background: url(/img/index/box3-backg-img.svg);
+	background-size: cover;
+	background-position: center;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	/* padding-left: 5em; */ /*Margin 10 %in box-inside instead */
+}
+
+/* Bakgrund till boxinside, blir transparent vid skalning */
+.box-inside-backg3 {
+	background:rgba(216, 138, 162, 0.7);
+}
+
+/* Box inuti stor topp-bild */
+.box-inside3 {
+	display: flex;
+	flex-basis: 250px;
+	color: white;
+	max-width: 500px;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	border-radius: 3px;
+	padding:35px 45px 35px 45px;
+	height: 700px;
+	margin-left: 10%;
+  }
+
+  /* Knapp stylad, ej button */
+  .button3 {
+	display: flex;
+	font-size: 0.9em;
+	width: 9em;
+	height: 2.9em;
+	color: white;
+	background: #DEA01E;;
+	align-items: center;
+	justify-content: center;
+	border-radius: 4px;
+	padding: auto;
+	border: 1px solid white;
+	margin-top: 2.5em;
+}
+/*-----------------------------------------------------------------------------*/
+/* Stor bild top innehåll avslut 3---------------------------------------------*/
+
+
+
+/* Stor bild top innehåll 4------------------------------------------------------*/
+/*-------------------------------------------------------------------------------*/
+.box-with-backg4 {
+	display: flex;
+	min-height: 50vh;
+	background: url(/img/index/inspiration-index.jpg);
+	background-size: cover;
+	background-position: center;
+	flex-direction: column;
+	align-items: flex-end;
+	justify-content: center;
+	/* padding-right: 5em; */ /*Margin 10 %in box-inside instead */
+}
+
+/* Bakgrund till box-inside, blir transparent vid skalning */
+/*  .box-inside-backg4 {
+	background:rgba(222, 160, 30, 0.7); 
+} */
+
+/* Box inuti stor topp-bild */
+.box-inside4 {
+	display: flex;
+	flex-basis: 250px;
+	color: white;
+	max-width: 500px;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	border-radius: 3px;
+	padding:35px 45px 35px 45px;
+	height: 700px;
+	margin-right: 10%;
+  }
+
+  /* Knapp stylad, ej button */
+  .button4 {
+	display: flex;
+	font-size: 0.9em;
+	width: 9em;
+	height: 2.9em;
+	color: white;
+	/* background: #00998E; */
+	align-items: center;
+	justify-content: center;
+	border-radius: 4px;
+	padding: auto;
+	border: 1px solid white;
+	margin-top: 2.5em;
+}
+/*-----------------------------------------------------------------------------*/
+/* Stor bild top innehåll avslut 4---------------------------------------------*/
+
+
+
+
+
+/*Div med text, mellanrum */
+.between-sections {
+	margin-top: 2.9em;	
+	margin-bottom: 1.3em;	
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-decoration: underline  rgb(113, 176, 243);
+}
+ 
+
+/* Kolumnstruktur------------------------------------------------------------*/
+/* Wrapper runt kolumner */
+.wrapper {
+	padding: 0px; /* Padding runtom wrappern */
+	max-width: 1400px; /*Maxbredd på de tre kolumnerna i helskärm */
+	width: 100%; /*Totatla bredden på de tre kolumnerna i helskärm */
+	margin: 0 auto; /* 10px= mellanrum mellan header och de 3 kolumnerna, auto= centrering av 3 kolumner */
+}
+
+/* Wrapper runt kolumner */
+.columns {
+	display: flex;
+	flex-flow: row wrap; /* Gör så att kolumnerna wrappar runt varandra/hoppar ner */
+	justify-content: center;
+	margin: 0px 0;  /* 5px= top margin is 5px , right margin is 0 */
+}
+
+/* Mellanrum mellan rubrik och text i kolumner */
+.column > h2 {
+	margin-bottom: 0.1em;;
+}
+
+/* Länkstyling i kolumner */
+.column > a {
+	color: #3F70A4;;
+	text-decoration: none;
+}
+
+/* Kolumnceller */
+.column {
+	flex: 1; /* flex:1 1 0; = flex:1 1; = flex:1;  , 
+  flex-grow : 1;    ➜ The div will grow in same proportion as the window-size       
+  flex-shrink : 1;  ➜ The div will shrink in same proportion as the window-size 
+  flex-basis : 0;   ➜ The div does not have a starting value as such and will 
+                     take up screen as per the screen size available for
+                     e.g:- if 3 divs are in the wrapper then each div will take 33% */
+	border: 1px solid #C4C4C4;
+	border-bottom: 1px solid black;
+	margin: 0em 2em 1em 2em; /* Mellanrum/margin mellan varge kolumn*/
+	padding-bottom: 1em; /* Padding inre mellanrummet mellan text och border på varge kolumn */
+	justify-content: center;
+	text-align: center;
+	border-radius: 5px;
+}
+
+/* Skalning på bilder i kolumnerna */
+.pic-scale-column {
+	width: 100%;
+	height: auto;
+	margin-bottom: 1em;
+	border-radius: 5px 5px 0px 0px;
+  }
+/* Kolumnstruktur Avslut------------------------------------------------------------*/
+
+footer {
+	padding: 0 15px;
+	border: 1px solid gray;
+  
+}
+
+
+@media screen and (max-width: 980px) {
+	.columns .column {
+		margin-bottom: 5px; /*Margin mellan kolumn 2 och 3 när sidan går under 980px */
+		flex-basis: 40%; /*När flexbasis går under 40% wrapppas den */
+  	}
+
+	.columns .column:nth-last-child(2) {
+		margin-right: 0; /* Margin på högersidan om du vill minska kolumn 2 i bredd ifrån höger under 980px */
+	}
+
+	.columns .column:last-child {
+		flex-basis: 40%; /*När flexbasis går under 40% wrapppas den */
+		margin: 0;  /*Margin åt alla håll på kolumn 3 när sidan går under 980px */
+		}
+	
+} /* Avslut mediaqueries 980px */
+
+
+@media screen and (max-width: 680px) {
+	.columns .column {
+		flex-basis: 100%; /*När flexbasis är 100% wrappas den och kommer på egen rad */
+		margin: 0 0 5px 0; /* bottom margin är 5px, blir mellanrummet mellan kolumnerna på höjden när fönstert är under 680px */
+	}
+
+	/* Bakgrund försvinner i inre topbox */
+	.box-inside-backg {
+		background-color: transparent;
+	}
+
+} /* Avslut mediaqueries 680px */
