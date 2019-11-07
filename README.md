@@ -1,2 +1,0 @@
-# Projektarbete-HTML-CSS
-Projektarbete
