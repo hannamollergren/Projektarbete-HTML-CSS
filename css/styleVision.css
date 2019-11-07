@@ -18,7 +18,6 @@ html, body {
     margin: 0;
 }
 header, footer{
-    background-color: white;
     color: #3E4756;
 }
 header{
@@ -39,68 +38,9 @@ z-index: 1;
 .container header { flex: 0 0 4em; }
 .container main { flex: 0 0 2em; }
 
-.footer{
-    background-color: #175384;
-    height: 25vh;
-}
-/*Header*/
-
-/*Logo*/
-.container-logo{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-.logo {
-    display: inline-block;
-    /*flex-basis: 160px;*/
-    width: 220px;
-    position: relative;
-    margin: 2em 0 1em 0;
-
-  }
-/*Navigation*/
-.nav {
-    position: relative;
-    font-family: 'Alice', serif;
-}
-.menu {
-    display: inline;
-    z-index: 100;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-end;
-    padding: 1em;
-}
-.menu a {
-    display: inline;
-    text-decoration: none;
-    color: #175384;
-    font-size: 1.2em;
-    margin: 0 1.9em;
-    font-weight: lighter;
-    
-}
-.menu a:hover{
-    cursor: pointer;
-}
-label {
-    margin: 0 2em 0 0;
-    font-size: 26px;
-    line-height: 70px;
-    display: none;
-    width: 26px;
-    float: right;
-}
-#toggle {
-    display: none;
-}
-
 /* Text */
 p{
     font-family: 'Open Sans', sans-serif;
-    text-align: center;
     margin-left: 2em;
     margin-right: 2em;
     line-height: 1.8em;
@@ -108,13 +48,10 @@ p{
 }
 h1, h2, h3, h4, h5, h6{
     font-family: 'Alice', serif;
-    text-align: center;
 }
 h1{
     font-size: 2em;
 }
-
-
 /* Big image */
 .big-image {
     display: grid;
@@ -124,8 +61,8 @@ h1{
   }
   .big-image1 {
     grid-area: image;  
-    min-height: 400px;
-    background: url(imageVision/imagevision.jpg);
+    min-height: 50vh;
+    background: url(../img/imageVision/imagevision.jpg);
     background-size: cover;
     background-position: center;
     padding: 2em;
@@ -133,6 +70,7 @@ h1{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-top: 1.5em;
   }
   .box-inside {
     flex-basis: 100px;
@@ -143,17 +81,21 @@ h1{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border-radius: 5px;
+    border-radius: 3px;
     background-color: rgba(216, 138, 162, 0.7);
 }
 .grid-header-text{
+    flex-direction: row;
+    align-self: center;
     color: white;
     padding: 1em; 
-    font-size: 2em;
+    font-size: 1.8em;
+    text-align: center;
 }
 .sub-text p{
     line-height: 1.4em;
     margin: 0 0 2em 0;
+    text-align: center;
 }
 .grid-header-text1 a > p{
     position: relative;  
@@ -161,7 +103,7 @@ h1{
     font-size: 1em;
     background-color: #DEA01E;
     box-sizing: border-box;
-    border-radius: 5px;
+    border-radius: 3px;
     color: white;
     display: inline-block;
     text-decoration: none;
@@ -169,7 +111,7 @@ h1{
     margin-bottom: 1em;
 } 
 
-/* Sub page title*/
+/* Sub title*/
 .vision{
     display: flex;
     flex-direction: row;
@@ -191,6 +133,12 @@ h1{
     width: 35px;
     height: 0px;    
 }  
+
+.our-company{
+    margin: 0 1em 2em 1em;
+
+    text-align: center;
+}
 
 /*Grid*/
 .vision-container{
@@ -227,29 +175,8 @@ h1{
     object-fit: cover;
 } 
 
-/*Media qu*/
-@media only screen and (max-width: 600px) {
-    label{
-        display: block;
-        cursor: pointer;
-    }
-    .menu{
-        text-align: center;
-        width: 100%;
-        display: none;   
-    }
-    .menu a{
-        display: block;
-        border-bottom: 1px solid white;
-        color: white;
-        background-color: #175384;
-        padding: 1em;
-        margin: 0;
-    }
-    #toggle:checked + .menu{
-        display: block;
-    }
-}
+/*Media*/
+
 @media only screen and (max-width: 700px) {
     .vision-container{
         margin: 0 0 2em 0;
@@ -257,5 +184,10 @@ h1{
 }
     .vision-container > div{
         border: transparent;
+}
+}
+@media only screen and (max-width: 700px) {
+.our-company p{
+    margin: 0em 2em 1em 2em;
 }
 }
