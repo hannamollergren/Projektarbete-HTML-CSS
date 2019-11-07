@@ -46,23 +46,19 @@ h1, h2, h3, h4, h5, h6{
     grid-template-areas:
       'image image ';
   }
-  .contact-image1 {
-    border: 2px solid pink;
-    grid-area: image;  
+  .contact-image1 {   /* Stora bilden */
+    display: flex;
     min-height: 50vh;
-    padding: 2em;
     background: url(../img/imageContact/spaceman.jpg);
     background-size: cover;
     background-position: center;
-    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin-top: 1.5em;
-  }
+ }
   .box-inside {
     flex-basis: 100px;
- /* Padding inre mellanrummet mellan text och border på varge kolumn */
     color: white;
     max-width: 500px;
     display: flex;
