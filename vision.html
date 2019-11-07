@@ -2,47 +2,98 @@
 <html lang="en">
 <head>
     <title>ISS | Vison</title>
-    <link rel="stylesheet" type="text/css" href="styleVision.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" type="text/css" href="css/styleVision.css">
     <meta charset="UTF-8">
-    <meta name="viewport"content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        @import url('https://fonts.googleapis.com/css?family=Open+Sans:600|Roboto&display=swap');
+        @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+        @import url('https://fonts.googleapis.com/css?family=Alice&display=swap');
     </style>
 </head>
 <body>
 <div class="container">
     <header>
-        
-        <div class="nav">
-        <img class="logo" src="imageVision/logo.png" alt="Logo">
-            <label for="toggle">&#9776;</label>
-            <input type="checkbox" id="toggle"/>
-            <div class="menu">
-                <a href="index.html">Start</a>
-                <a href="shop.html">Shop</a>
-                <a href="vision.html">Vision</a>
-                <a href="about-us.html">About</a>
-                <a href="contact.html">Contact</a>
-            </div>
+        <a class="logo-link" href="index.html"><img class="logo" src="img/header/logo.svg" alt="logo"></a> 
+        <nav>
+            <a href="vision.html">OUR VISION</a>
+            <a href="shop.html">SHOP</a>
+            <a href="about-us.html">ABOUT US</a>
+            <a href="contact.html">CONTACT</a>
+        </nav>
+        <div class="label">
+            <span>Välj en sida</span>
+            <div class="hamburger-icon"><img src="img/header/hamburger.svg" alt="-"></div>
         </div>
+        <ul class="menu">
+            <li><a href=""></a></li>
+            <li><a href="vision.html">OUR VISION</a></li>
+            <li><a href="shop.html">SHOP</a></li>
+            <li><a href="about-us.html">ABOUT US</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
     </header>
 <main>         
     <article>
-    <div class="grid-header">
-        <h1 class="grid-header-text">Vi ska restaurera jorden <br>inför framtiden</h1>
-        <p class="grid-header-text1"><a href="#">Explore more</a></p>
-    </div>  
-    <div class="grid-container">
-        <div class="grid-image">image</div>
-        <div class="grid-image">image</div>
-        <div class="grid-image">image</div>
-        <div class="grid-text"><p>Restaurera jorden</p></div>
-        <div class="grid-text"><p>Hållbarhet (Klimatsmarta rymdfarkoster)</p></div>
-        <div class="grid-text"><p>Beboliga planeter (Under en viss period <br>ska alla individer på jorden ha lämnat planeten)</p></div>
-    </div>  
+        <section>
+            <div class="big-image1">
+                <div class="box-inside">
+                    <h1 class="grid-header-text">Restore the earth<br>for the future generations</h1>
+                    <div class="sub-text"><p>Do you wanna join our team? Visit our career page and explore available positions.</p></div>
+                    <div class="grid-header-text1"><a href="#"><p>Career</p></a></div>
+                </div>
+            </div>
+   
+            <div class="vision">
+                <div class="vision-title">Vision</div>
+                <div class="vision-border"></div>
+            </div>
+        </section>  
+        <section class="our-company">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione quibusdam ab corporis molestiae delectus beatae praesentium veniam 
+                sed accusantium minima quod natus obcaecati, architecto voluptatum soluta tenetur distinctio. Qui, nihil?<br><br>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque aliquid, repudiandae quis nisi quos similique praesentium nobis sapiente quod cum aperiam culpa quidem magni quia temporibus repellendus sit. Maxime, facilis.
+            </p>
+        </section>
+        <section class="vision-container">
+            <div class="item1"><img class="image-vision" src="img/imageVision/planet1.jpg" alt="Residential planets" width="350">
+                <h3>Residential planets</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur 
+                adipisicing elit. Eum, odit. Voluptate adipisci sed eaque, minus perspiciatis rerum. Nobis 
+                consequuntur quis maiores, tenetur cumque aut labore, beatae dicta eos!</p>
+            </div>
+            <div class="item2"><img class="image-vision" src="img/imageVision/planet2.jpg" alt="Sustainability">
+                <h3>Sustainability</h3>
+                <p>Lorem ipsum dolor sit amet consectetur 
+                adipisicing elit. Doloribus, iure dolore, ratione fuga delectus animi vitae eaque sed 
+                numquam id commodi autem veritatis illum quibusdam quos animi vitae eaque sed.</p>
+            </div>
+            <div class="item3"><img class="image-vision" src="img/imageVision/planet3.jpg" alt="Restore the earth">
+                <h3>Restore the earth</h3>
+                <p>Lorem ipsum dolor sit amet consectetur 
+                adipisicing elit. Ipsum autem consequuntur ea fuga alias enim nesciunt.
+                Autem quod quam id at hic quia, ad minima aut explicabo enim nesciunt animi vitae eaque sed.</p>
+            </div>
+        </section>  
     </article>
-    </main>
-    <footer></footer>
+</main>
+    <footer> 
+        <div class="left">
+            <h3>Icaros Spaces Sales</h3>
+            <div><p>Besöksadress: Joel Alme Torg 89 / Adress: Box 1982, 422 04 Glenns Backa<br>Telefon: 031 323 19 89<br>Telefontider: mån-fre 08.00-16.30<br>E-post: icaros.spaces.sales@goteborg.se</p></div>
+            <div class="social-media">
+                <img src="img/footer/facebook.svg" alt="">
+                <img src="img/footer/instagram.svg" alt="">
+                <img src="img/footer/twitter.svg" alt="">
+                <img src="img/footer/youTube.svg" alt="">
+            </div>
+        </div>       
+        <div class="right">
+            <img class="logo-footer" src="img/footer/logo-footer.svg" alt="">
+            <img class="logo-footer-small" src="img/footer/logo-footer-small.svg" alt="">
+        </div>
+    </footer>
 </div>
 </body>
 </html>
