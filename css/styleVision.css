@@ -74,7 +74,7 @@ h1{
   }
   .box-inside {
     flex-basis: 100px;
-    padding: 2em; /* Padding inre mellanrummet mellan text och border på varge kolumn */
+    padding: 2em; 
     color: white;
     max-width: 500px;
     display: flex;
@@ -191,3 +191,4 @@ h1{
     margin: 0em 2em 1em 2em;
 }
 }
+

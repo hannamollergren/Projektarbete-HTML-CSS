@@ -49,7 +49,7 @@ h1, h2, h3, h4, h5, h6{
   .contact-image1 {   /* Stora bilden */
     display: flex;
     min-height: 50vh;
-    background: url(../img/imageContact/spaceman.jpg);
+    background: url(../img/imageContact1/spaceman.jpeg);
     background-size: cover;
     background-position: center;
     flex-direction: column;
