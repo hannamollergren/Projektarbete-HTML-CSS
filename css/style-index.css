@@ -90,11 +90,7 @@ h2 {
 .box-with-backg2 {
 	display: flex;
 	min-height: 50vh;
-<<<<<<< HEAD
-	background: url(/img/index/astro-copy.svg);
-=======
 	background: url(../img/index/astro-copy.svg);
->>>>>>> 1e3aa79ed29eb2d384e910533c054df4af8bd885
 	background-size: cover;
 	background-position: center;
 	flex-direction: column;
@@ -148,11 +144,7 @@ h2 {
 .box-with-backg3 {
 	display: flex;
 	min-height: 50vh;
-<<<<<<< HEAD
-	background: url(/img/index/box3-backg-img.svg);
-=======
 	background: url(../img/index/box3-backg-img.svg);
->>>>>>> 1e3aa79ed29eb2d384e910533c054df4af8bd885
 	background-size: cover;
 	background-position: center;
 	flex-direction: column;
@@ -206,11 +198,7 @@ h2 {
 .box-with-backg4 {
 	display: flex;
 	min-height: 50vh;
-<<<<<<< HEAD
-	background: url(/img/index/inspiration-index.jpg);
-=======
 	background: url(../img/index/inspiration-index.jpg);
->>>>>>> 1e3aa79ed29eb2d384e910533c054df4af8bd885
 	background-size: cover;
 	background-position: center;
 	flex-direction: column;
