@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
     <title>ISS | Vison</title>
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/style-header.css">
+    <link rel="stylesheet" href="css/style-footer.css">
     <link rel="stylesheet" type="text/css" href="css/styleVision.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,28 +14,27 @@
 </head>
 <body>
 <div class="container">
-    <header>
-                    <a class="logo-link" href="index.html"><img class="logo" src="img/header/logo.svg" alt="logo"></a> 
-                    <nav>
-                        <a href="vision.html">OUR VISION</a>
-                        <a href="shop.html">SHOP</a>
-                        <a href="about-us.html">ABOUT US</a>
-                        <a href="contact.html">CONTACT</a>
-                    </nav>
-                    <div class="label">
-                        <span>Välj en sida</span>
-                        <div class="hamburger-icon"><img src="img/header/hamburger.svg" alt="-"></div>
-                    </div>
-                    <ul class="menu">
-                        <li><a href=""></a></li>
-                        <li><a href="https://hannamollergren.github.io/Projektarbete-HTML-CSS/vision.html">OUR VISION</a></li>
-                        <li><a href="https://hannamollergren.github.io/Projektarbete-HTML-CSS/shop.html">SHOP</a></li>
-                        <li><a href="https://hannamollergren.github.io/Projektarbete-HTML-CSS/about-us.html">ABOUT US</a></li>
-                        <li><a href="https://hannamollergren.github.io/Projektarbete-HTML-CSS/contact.html">CONTACT</a></li>
-                    </ul>
-    </header>
+        <header id="to-top">
+            <div class="logo-bar"><a class="logo-link" href="index.html"><img class="logo" src="img/header/logo.svg" alt="logo"></a> </div>
+            <nav>
+                <a href="vision.html">OUR VISION</a>
+                <a href="shop.html">SHOP</a>
+                <a href="about-us.html">ABOUT US</a>
+                <a href="contact.html">CONTACT</a>
+            </nav>
+            <div class="label">
+                <span>Välj en sida</span>
+                <div class="hamburger-icon"><img src="img/header/hamburger.svg" alt="-"></div>
+            </div>
+            <ul class="menu">
+                <li><a href=""></a></li>
+                <li><a href="vision.html">OUR VISION</a></li>
+                <li><a href="shop.html">SHOP</a></li>
+                <li><a href="about-us.html">ABOUT US</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </header>
 <main>         
-    <article>
         <section>
             <div class="big-image1">
                 <div class="box-inside">
@@ -50,45 +49,54 @@
                 <div class="vision-border"></div>
             </div>
         </section>  
-        <section class="our-company">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione quibusdam ab corporis molestiae delectus beatae praesentium veniam 
-                sed accusantium minima quod natus obcaecati, architecto voluptatum soluta tenetur distinctio. Qui, nihil?<br><br>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque aliquid, repudiandae quis nisi quos similique praesentium nobis sapiente quod cum aperiam culpa quidem magni quia temporibus repellendus sit. Maxime, facilis.
+        <div class="our-company">
+            <p>
+                As we all know, there is a climate crisis. Leaders around the world works on solutions 
+                for less climate emissions. Have they succeeded? No! Icaros Space Sales has come up with a sustainable solution, we will restore the earth to 
+                the state of origin. Our vision is to complete this construction by year 2060.<br><br> Until then, all individuals on earth will 
+                be distributed to different places in space. ISS sells planets, moons, galaxies and stars. We offer free travel with our spacecrafts
+                to your new home. All our spacecrafts are provided with special sustainable fuel, zero environmental emissions. Click <a href="shop.html">here</a> to visit our shop!
             </p>
-        </section>
+        </div>
         <section class="vision-container">
-            <div class="item1"><img class="image-vision" src="img/imageVision/planet1.jpg" alt="Residential planets" width="350">
+            <div class="item1">
+                <img src="img/imageVision/planet1.jpg" alt="Residential planets" width="350">
                 <h3>Residential planets</h3>
                 <p>Lorem ipsum, dolor sit amet consectetur 
                 adipisicing elit. Eum, odit. Voluptate adipisci sed eaque, minus perspiciatis rerum. Nobis 
                 consequuntur quis maiores, tenetur cumque aut labore, beatae dicta eos!</p>
             </div>
-            <div class="item2"><img class="image-vision" src="img/imageVision/planet2.jpg" alt="Sustainability">
+            <div class="item2">
+                <img src="img/imageVision/planet2.jpg" alt="Sustainability">
                 <h3>Sustainability</h3>
                 <p>Lorem ipsum dolor sit amet consectetur 
                 adipisicing elit. Doloribus, iure dolore, ratione fuga delectus animi vitae eaque sed 
                 numquam id commodi autem veritatis illum quibusdam quos animi vitae eaque sed.</p>
             </div>
-            <div class="item3"><img class="image-vision" src="img/imageVision/planet3.jpg" alt="Restore the earth">
+            <div class="item3">
+                <img src="img/imageVision/planet3.jpg" alt="Restore the earth">
                 <h3>Restore the earth</h3>
                 <p>Lorem ipsum dolor sit amet consectetur 
                 adipisicing elit. Ipsum autem consequuntur ea fuga alias enim nesciunt.
                 Autem quod quam id at hic quia, ad minima aut explicabo enim nesciunt animi vitae eaque sed.</p>
             </div>
         </section>  
-    </article>
+    <div class="rocket">
+            <a href="#to-top"><img src="img/imageVision/rocket.svg" alt=""></a>
+            <div class="fire"><img src="img/imageVision/fire.svg" alt=""></div>
+    </div>
 </main>
-    <footer> 
+    <footer>
         <div class="left">
             <h3>Icaros Spaces Sales</h3>
-            <div><p>Besöksadress: Joel Alme Torg 89 / Adress: Box 1982, 422 04 Glenns Backa<br>Telefon: 031 323 19 89<br>Telefontider: mån-fre 08.00-16.30<br>E-post: icaros.spaces.sales@goteborg.se</p></div>
+            <p>Address: Joel Alme Torg 89 / Business Address: Box 1982, 422 04 Glenns Backa<br>Phone Number: 031 323 19 89<br>Phone hours: Mon-Fri 08.00-16.30<br>Email: icaros.spaces.sales@goteborg.se</p>
             <div class="social-media">
-                <img src="img/footer/facebook.svg" alt="">
-                <img src="img/footer/instagram.svg" alt="">
-                <img src="img/footer/twitter.svg" alt="">
-                <img src="img/footer/youTube.svg" alt="">
+                <a href=""><img src="img/footer/facebook.svg" alt=""></a>
+                <a href=""><img src="img/footer/instagram.svg" alt=""></a>
+                <a href=""><img src="img/footer/twitter.svg" alt=""></a>
+                <a href=""><img src="img/footer/youTube.svg" alt=""></a>
             </div>
-        </div>       
+        </div> 
         <div class="right">
             <img class="logo-footer" src="img/footer/logo-footer.svg" alt="">
             <img class="logo-footer-small" src="img/footer/logo-footer-small.svg" alt="">
