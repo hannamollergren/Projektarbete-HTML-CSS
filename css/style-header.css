@@ -7,9 +7,6 @@
     -ms-user-select: none;
     user-select: none;
 }
-body {
-	min-width: 400px;
-}
 .logo-bar {
 	margin: auto;
 }
