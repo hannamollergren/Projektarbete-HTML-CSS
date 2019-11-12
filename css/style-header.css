@@ -1,19 +1,10 @@
 * {
-<<<<<<< HEAD
-	padding: 0px;
-	margin: 0px;
-	box-sizing: border-box;
-}
-.logo-bar {
-	margin: auto;
-=======
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
 }
 .logo-bar {
     margin: auto;
->>>>>>> tobias2
 }
 .logo-link {
     display: flex;
@@ -27,21 +18,12 @@
     padding: 2em;
 }
 header {
-<<<<<<< HEAD
-	font-family: 'Alice', serif;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 1em;
-	display: flex;
-	flex-direction: column;
-=======
     font-family: 'Alice', serif;
     font-style: normal;
     font-weight: normal;
     font-size: 1em;
     display: flex;
     flex-direction: column;
->>>>>>> tobias2
 }
 nav {
     display: flex;
