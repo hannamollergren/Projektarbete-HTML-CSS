@@ -5,276 +5,661 @@
 	-webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
-    user-select: none;
+	user-select: none;
 }
+html {
+	scroll-behavior: smooth;
+}
+.shop-menu {
+	font-family: Alice;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 1em;
+	margin-top: 1.2em;
+}
+.rocket {
+	background: transparent;
+	cursor: pointer;
+	position: fixed;
+	border: none;
+	border-radius: 4px;
+	margin: 1em 0 1em 0;
+	bottom: 2em;
+	right: 0;
+	width: 40px;
+	height: 40px;
+	z-index: 200;
+}
+.rocket:hover {
+	animation: bounce 0.4s infinite;
+}
+/* .rocket:hover {
+	animation: bounce-high 0.5s;
+} */
+
+/* @keyframes bounce-high {
+	0% {
+	  transform: translateY(0px);
+	}
+	100% {
+	  transform: translateY(-600px);
+	}
+  } */
+@keyframes bounce {
+	0% {
+	  transform: translate3d(0px, 0px, 0);
+	}
+	50% {
+	  transform: translate3d(0px, -5px, 0);
+	}
+	100% {
+	  transform: translate3d(0px, 0px, 0);
+	}
+}
+
+.fire {
+	display: none;
+	cursor: pointer;
+	position: absolute;
+	border: none;
+	bottom: -2em;
+	right: 0;
+	width: 40px;
+	height: 40px;
+	z-index: 200;
+	transition: transform .8s ease;
+}
+.rocket:hover .fire{
+	display: block;
+
+}
+/* @keyframes fire {
+	0% {
+	  transform: translate3d(0px, 0px, 0);
+	  transform: scale(1.2); 
+
+	}
+	50% {
+	  transform: translate3d(0px, 5px, 0);
+	  transform: scale(1); 
+
+	}
+	100% {
+	  transform: translate3d(0px, 0px, 0);
+	  transform: scale(1.3); 
+
+	}
+  } */
+
+/* funciona pero en touch y hay que ver que pasa despues  */
+
+
+/* .rocket:active img {
+	scroll-behavior: smooth;
+	transition: transform .5s ease;
+	transform: translate(0px, -600px);
+} */
+/* .rocket {
+	scroll-behavior: smooth;
+	transition: transform .5s ease;
+	transform: translate(-0px, -600px);
+} */
+
+/* --------------------------------------------------------- */
+
+/* @-webkit-keyframes spaceboots {
+	0% { -webkit-transform: translate(4px, 2px) rotate(0deg); }
+	10% { -webkit-transform: translate(-2px, -4px) rotate(-2deg); }
+	20% { -webkit-transform: translate(-6px, 0px) rotate(2deg); }
+	30% { -webkit-transform: translate(0px, 4px) rotate(0deg); }
+	40% { -webkit-transform: translate(2px, -2px) rotate(2deg); }
+	50% { -webkit-transform: translate(-2px, 4px) rotate(-2deg); }
+	60% { -webkit-transform: translate(-6px, 2px) rotate(0deg); }
+	70% { -webkit-transform: translate(4px, 2px) rotate(-2deg); }
+	80% { -webkit-transform: translate(-2px, -2px) rotate(2deg); }
+	90% { -webkit-transform: translate(4px, 4px) rotate(0deg); }
+	100% { -webkit-transform: translate(2px, -4px) rotate(-2deg); }
+}
+.rocket:active,
+.rocket:focus {
+	-webkit-animation-name: spaceboots;
+	-webkit-animation-duration: 0.5s;
+	-webkit-transform-origin:50% 50%;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+} */
+
+/* --------------------------------------------------------- */
+
 .img-top {
 	display: flex;
-	padding: 2em;
-	min-height: 50vh;
-	background: url(../img/shop/img-top.svg);
-    background-size: cover; 
-    background-position: center; 
-	margin-bottom: 1.0em;
+	height: 50vh;
+	background: url(https://svs.gsfc.nasa.gov/vis/a030000/a031000/a031016/STScI-H-Whale_galaxy-h-4467x1217.png);
+	background-size: cover;
+	background-position:center; 
+	background-repeat:no-repeat; 
+	width: 100%;
+}
+.shop-box {
+	background: #DEA01E;
+	width: 375px;
+	height: 210px;
+	border-radius: 3px;
+	margin: auto;
+	justify-content: center;
+	align-content: center;
+	opacity: 80%;
+	color: white;
 }
 .shop-banner {
-	flex-basis: 100px;
-	padding: 2em;
+	display: flex;
 	color: white;
 	max-width: 500px;
-	display: flex;
 	flex-direction: column;
 	align-items: center;
+	text-align: center;
 	justify-content: center;
-	border-radius: 3px;
-	background-color: #DEA01E;
-	opacity: 90%;
-	margin: auto;
- }
- .shop-banner h3 {
+	padding: 2.5em;
+}
+.shop-banner h2 {
+	font-family: Alice;
+	font-style: normal;
+	font-weight: normal;
 	flex-direction: row;
 	align-self: center;
+	justify-content: center;
 	color: white;
-	padding: 1em;
-	font-size: 1.8em;
+	font-size: 2em;
 	text-align: center;
- }
- .shop-banner p {
-	line-height: 1.4em;
-	margin: 0 0 2em 0;
-	text-align: center;
- }
- .button-shop {
-	position: relative;
-	border: 1px solid white;
+}
+.shop-banner span {
+	font-family: 'Open Sans', sans-serif;
 	font-size: 1em;
-	background-color: #DEA01E;
-	box-sizing: border-box;
-	border-radius: 3px;
+}
+.button-shop {
+	display: flex;
+	font-size: 0.9em;
+	width: 86px;
+	height: 36px;
 	color: white;
-	display: inline-block;
-	text-decoration: none;
-	padding: 8px 20px;
-	margin-bottom: 1em;
- }
+	align-items: center;
+	justify-content: center;
+	padding: auto;
+	margin-top: 2.5em;
+	background: #DEA01E;
+	border: 2px solid #FFFFFF;
+	box-sizing: border-box;
+	border-radius: 5px;
+}
+.shop-title {
+	font-family: Alice;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 1em;
+	position: relative;
+	color: #3E4756;
+	font-size: 1.6em;
+	width: 100px;
+	text-align: center;
+	margin-top: 2em;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+}
+.shop-border {
+	position: absolute;
+	border: 1px solid #175384;
+	width: 35px;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+}
+.moons-title {
+	font-family: Alice;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 1em;
+	display: none;
+	position: relative;
+	font-family: ‘Alice’, serif;
+	color: #3E4756;
+	font-size: 1.6em;
+	width: 100px;
+	text-align: center;
+	margin-top: 2em;
+ 	margin-left: auto;
+	margin-right: auto;
+ 	left: 0;
+	right: 0;
+}
+.moons-border {
+	display:none;
+	position: absolute;
+	border: 1px solid #175384;
+	width: 35px;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+}
+.menu-moons:hover .moons-title {
+	display: block;
+}
 .container {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
-	grid-gap: 0.5em;
-	margin: 0 3em 0 3em;
+	grid-gap: 0.2em;
+	margin: 2.5em 3em 2.5em 3em;
 }
-.product {
-	font-style: normal;
-	font-weight: normal;
-	line-height: 25px;
-	text-align: center;
-	background-color: black;
-	border-radius: 4px;
-	margin: 1em 1em 1em 1em;
-	color: #ffffff;
-	max-height: 285px;
-	padding: 1.5em;
+.container .product-info {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	text-align: left;
 }
-.shop {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	margin: auto;
-	align-self: center;
-	justify-self: center;
-
- }
- .shop-title {
-	font-family: ‘Alice’, serif;
-	font-size: 1.4em;
-	margin-bottom: 0.3em;
-	padding: 1em 0 0 0;
-	align-self: center;
-	justify-self: center;
- }
- .shop-border {
-	border: 2px solid #175384;
-	width: 35px;
-	height: 0px;
-	align-self: center;
- }
-.container .product-info > p {
-	font-family: 'Open Sans', sans-serif;
-}
-.container .product-info > h2 {
+.container .product-info > h3 {
+	padding: 1em;
 	font-family: 'Alice', serif;
+	font-size: 2em;
+	color: #E3E6EB;
 }
-.img-product-1 {
-	display: flex;
-	height: 40vh;
-	background: url(../img/shop/moons/earth_moon.svg);
-    background-size: cover; 
-	background-position: center; 
-	margin-bottom: 1.0em;
-}
-.img-product-2 {
-	display: flex;
-	background-color: black;
-	height: 40vh;
-	background: url(../img/shop/planets/1.svg);
-    background-size: cover; 
-	background-position: center; 
-	margin-bottom: 1.0em;
-}
-.img-product-3 {
-	display: flex;
-	background-color: black;
-	height: 40vh;
-	background: url(../img/shop/planets/2.svg);
-    background-size: cover; 
-	background-position: center; 
-	margin-bottom: 1.0em;
-}
-.img-product-4 {
-	display: flex;
-	background-color: black;
-	height: 40vh;
-	background: url(../img/shop/planets/3.svg);
-    background-size: cover; 
-	background-position: center; 
-	margin-bottom: 1.0em;
-}
-.img-product-5 {
-	display: flex;
-	background-color: black;
-	height: 40vh;
-	background: url(../img/shop/planets/4.svg);
-    background-size: cover; 
-	background-position: center; 
-	margin-bottom: 1.0em;
-}
-.img-product-6 {
-	display: flex;
-	background-color: black;
-	height: 40vh;
-	background: url(../img/shop/planets/5.svg);
-    background-size: cover; 
-	background-position: center; 
-	margin-bottom: 1.0em;
-}
-.img-product-7 {
-	display: flex;
-	background-color: black;
-	height: 40vh;
-	background: url(../img/shop/planets/6.svg);
-    background-size: cover; 
-	background-position: center; 
-	margin-bottom: 1.0em;
-}
-.img-product-8 {
-	display: flex;
-	background-color: black;
-	height: 40vh;
-	background: url(../img/shop/planets/7.svg);
-    background-size: cover; 
-	background-position: center; 
-	margin-bottom: 1.0em;
-}
-.img-product-9 {
-	display: flex;
-	background-color: black;
-	height: 40vh;
-	background: url(../img/shop/planets/8.svg);
-    background-size: cover; 
-	background-position: center; 
-	margin-bottom: 1.0em;
-}
-.img-product-10 {
-	display: flex;
-	background-color: black;
-	height: 40vh;
-	background: url(../img/shop/planets/9.svg);
-    background-size: cover; 
-	background-position: center; 
-	margin-bottom: 1.0em;
-}
-.img-product-11 {
-	display: flex;
-	background-color: black;
-	height: 40vh;
-	background: url(../img/shop/planets/10.svg);
-    background-size: cover; 
-	background-position: center; 
-	margin-bottom: 1.0em;
-}
-.img-product-12 {
-	display: flex;
-	background-color: black;
-	height: 40vh;
-	background: url(../img/shop/planets/11.svg);
-    background-size: cover; 
-	background-position: center; 
-	margin-bottom: 1.0em;
-}
-.info-product {
+.container .product-info > p {
+	padding: 1em;
 	font-family: 'Open Sans', sans-serif;
-}
-.product {
-	overflow: hidden; /* Hide the overflowing of child elements */
-}
-  
-.img-products {
-	transition: transform .5s ease; /* Transition property for smooth transformation of images */
-}
-  
-.product:hover .img-products {
-	transform: scale(1.3); /* Finally, transforming the image when container gets hovered */
+	color: #E3E6EB;
 }
 
-.product .product-info {
-	transition: transform .8s ease; /* Transition property for smooth transformation of images */
+/* -------------------------------------------------------- PLANETS BILDER ---*/
+
+.img-product-mercury {
+	height: 40vh;
+	background: url(../img/shop/planets/mercury.svg);
+	background-size: 90%; 
+	background-position: center; 
+	background-repeat:no-repeat;
+	margin: 1em;
 }
-  
-.product:hover .product-info {
-	transform: scale(1.2); /* Finally, transforming the image when container gets hovered */
-	transform: translate(0px, -230px);
+.img-product-venus {
+	height: 40vh;
+	background: url(../img/shop/planets/venus.svg);
+	background-size: 90%; 
+	background-position: center; 
+	background-repeat:no-repeat;
+	margin-bottom: 1.0em;
+	margin: 1em;
 }
+.img-product-earth {
+	height: 40vh;
+	background: url(../img/shop/planets/earth.svg);
+	background-size: 90%; 
+	background-position: center; 
+	background-repeat:no-repeat; 
+	margin-bottom: 1.0em;
+	margin: 1em;
+}
+.img-product-mars {
+	height: 40vh;
+	background: url(../img/shop/planets/mars.svg);
+	background-size: 90%; 
+	background-position: center; 
+	background-repeat:no-repeat;
+	margin-bottom: 1.0em;
+	margin: 1em;
+}
+.img-product-jupiter {
+	height: 40vh;
+	background: url(../img/shop/planets/jupiter.svg);
+	background-size: 90%; 
+	background-position: center; 
+	background-repeat:no-repeat; 
+	margin-bottom: 1.0em;
+	margin: 1em;
+}
+.img-product-saturn {
+	height: 40vh;
+	background: url(../img/shop/planets/saturn.svg);
+	background-size: 90%; 
+	background-position: center; 
+	background-repeat:no-repeat; 
+	margin: 1em 1em 4em 1em;
+}
+.img-product-uranus {
+	height: 40vh;
+	background: url(../img/shop/planets/uranus.svg);
+	background-size: 90%; 
+	background-position: center; 
+	background-repeat:no-repeat; 
+	margin-bottom: 1.0em;
+	margin: 1em;
+}
+.img-product-neptune {
+	height: 40vh;
+	background: url(../img/shop/planets/neptune.svg);
+	background-size: 90%; 
+	background-position: center; 
+	background-repeat:no-repeat;
+	margin-bottom: 1.0em;
+	margin: 1em;
+}
+
+/* --- --- MOONS BILDER --- ---*/
+
+/*--- MARS MOONS ---*/
+
+.img-product-deimos {
+	height: 40vh;
+	background: url(../img/shop/planets/mercury.svg);
+    background-size: cover; 
+	background-position: center; 
+	margin-bottom: 1.0em;
+}
+.img-product-phobos {
+	height: 40vh;
+	background: url(../img/shop/planets/venus.svg);
+    background-size: cover; 
+	background-position: center; 
+	margin-bottom: 1.0em;
+}
+
+/*--- JUPITER MOONS ---*/
+
+.img-product-io {
+	height: 40vh;
+	background: url(../img/shop/planets/earth.svg);
+    background-size: cover; 
+	background-position: center; 
+	margin-bottom: 1.0em;
+}
+.img-product-europa {
+	height: 40vh;
+	background: url(../img/shop/planets/mars.svg);
+    background-size: cover; 
+	background-position: center; 
+	margin-bottom: 1.0em;
+}
+.img-product-ganymede {
+	height: 40vh;
+	background: url(../img/shop/planets/jupiter.svg);
+    background-size: cover; 
+	background-position: center; 
+	margin-bottom: 1.0em;
+}
+
+/*--- SATURN MOONS ---*/
+
+.img-product-dione {
+	height: 40vh;
+	background: url(../img/shop/planets/saturn.svg);
+    background-size: cover; 
+	background-position: center; 
+	margin-bottom: 1.0em;
+}
+.img-product-enceladus {
+	height: 40vh;
+	background: url(../img/shop/planets/uranus.svg);
+    background-size: cover; 
+	background-position: center; 
+	margin-bottom: 1.0em;
+}
+.img-product-epimetheus {
+	height: 40vh;
+	background: url(../img/shop/planets/neptune.svg);
+    background-size: cover; 
+	background-position: center; 
+	margin-bottom: 1.0em;
+}
+
+/*--- URANUS MOONS ---*/
+
+.img-product-ariel {
+	height: 40vh;
+	background: url(../img/shop/planets/uranus.svg);
+    background-size: cover; 
+	background-position: center; 
+	margin-bottom: 1.0em;
+}
+.img-product-oberon {
+	height: 40vh;
+	background: url(../img/shop/planets/neptune.svg);
+    background-size: cover; 
+	background-position: center; 
+	margin-bottom: 1.0em;
+}
+.img-product-rosalind {
+	height: 40vh;
+	background: url(../img/shop/planets/neptune.svg);
+    background-size: cover; 
+	background-position: center; 
+	margin-bottom: 1.0em;
+}
+.img-product-titania {
+	height: 40vh;
+	background: url(../img/shop/planets/neptune.svg);
+    background-size: cover; 
+	background-position: center; 
+	margin-bottom: 1.0em;
+}
+.img-product-umbriel {
+	height: 40vh;
+	background: url(../img/shop/planets/neptune.svg);
+    background-size: cover; 
+	background-position: center; 
+	margin-bottom: 1.0em;
+}
+
+/*--- NEPTUNE MOONS ---*/
+
+.img-product-triton {
+	height: 40vh;
+	background: url(../img/shop/planets/neptune.svg);
+    background-size: cover; 
+	background-position: center; 
+	margin-bottom: 1.0em;
+}
+
+/*--------------------------------------------------*/
+
+.product-planet {
+	height: 290px;
+	overflow: hidden;
+	transition: transform .8s ease; 
+	background: url(https://svs.gsfc.nasa.gov/vis/a030000/a031000/a031016/STScI-H-Whale_galaxy-h-4467x1217.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.product-planet:hover {
+	overflow: hidden;
+	transition: transform .1s ease; 
+	transform: scale(.97);
+	background: url(https://svs.gsfc.nasa.gov/vis/a030000/a031000/a031016/STScI-H-Whale_galaxy-h-4467x1217.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.img-product {
+	transition: transform .6s ease;
+}
+.product-planet:hover .img-product {
+	transform: scale(0.70) translate(20%, -25%);
+}
+.product-planet .product-info {
+	transition: transform .8s ease; 
+}
+.product-planet:hover .product-info > p {
+	transition: transform .8s ease; 
+}
+.product-planet:hover .product-info > h3 {
+	transition: transform .8s ease; 
+}
+.product-planet:hover .product-info > h3 {
+	transform: scale(1.2); 
+	transform: translate(0px, -200px);
+}
+.product-planet:hover .product-info > p {
+	transform: scale(1.2); 
+	transform: translate(0px, -265px);
+	padding: 2em;
+} 
 
 /* media-media-media-media-media-media */
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1150px) {
 	.container {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
-		grid-column-gap: 1em;
 	}
-	.product {
-		column-gap: 1em;
+	.product-planet {
+		height: 350px;
+		overflow: hidden;
+		transition: transform .8s ease; 
+		background: url(https://svs.gsfc.nasa.gov/vis/a030000/a031000/a031016/STScI-H-Whale_galaxy-h-4467x1217.png);
+		background-size: cover;
 	}
-	.info-product {
-		font-family: 'Open Sans', sans-serif;
+	.img-product {
+		transform: scale(.9);
+		transition: transform .6s ease;
 	}
+
+	/* PLANETS MEDIA MEDIA MEDIA 1 */
+
+	.img-product-mercury {
+		height: 52vh;
+		background: url(../img/shop/planets/mercury.svg);
+		background-size: 90%; 
+		background-position: center; 
+		background-repeat:no-repeat;
+		margin: 1em;
+	}
+	.img-product-venus {
+		height: 52vh;
+		background: url(../img/shop/planets/venus.svg);
+		background-size: 90%; 
+		background-position: center;
+		background-repeat:no-repeat; 
+		margin-bottom: 1.0em;
+		margin: 1em;
+	}
+	.img-product-earth {
+		height: 52vh;
+		background: url(../img/shop/planets/earth.svg);
+		background-size: 90%; 
+		background-position: center; 
+		background-repeat:no-repeat;
+		margin-bottom: 1.0em;
+		margin: 1em;
+	}
+	.img-product-mars {
+		height: 52vh;
+		background: url(../img/shop/planets/mars.svg);
+		background-size: 90%; 
+		background-position: center; 
+		background-repeat:no-repeat;
+		margin-bottom: 1.0em;
+		margin: 1em;
+	}
+	.img-product-jupiter {
+		height: 52vh;
+		background: url(../img/shop/planets/jupiter.svg);
+		background-size: 90%; 
+		background-position: center; 
+		background-repeat:no-repeat;
+		margin-bottom: 1.0em;
+		margin: 1em;
+	}
+	.img-product-saturn {
+		height: 52vh;
+		background: url(../img/shop/planets/saturn.svg);
+		background-size: 90%; 
+		background-position: center; 
+		background-repeat:no-repeat;
+		margin: 1em 1em 4em 1em;
+	}
+	.img-product-uranus {
+		height: 52vh;
+		background: url(../img/shop/planets/uranus.svg);
+		background-size: 90%; 
+		background-position: center; 
+		background-repeat:no-repeat;
+		margin-bottom: 1.0em;
+		margin: 1em;
+	}
+	.img-product-neptune {
+		height: 52vh;
+		background: url(../img/shop/planets/neptune.svg);
+		background-size: 90%; 
+		background-position: center; 
+		background-repeat:no-repeat;
+		margin-bottom: 1.0em;
+		margin: 1em;
+	}
+
+	.product-planet:hover .img-product {
+		transform: scale(0.60) translate(20%, -25%);
+	}
+	.product-planet .product-info {
+		transition: transform .8s ease; 
+	}
+	.product-planet:hover .product-info > p {
+		transition: transform .8s ease; 
+	}
+	.product-planet:hover .product-info > h3 {
+		transition: transform .8s ease; 
+	}
+	.product-planet:hover .product-info > h3 {
+		transform: scale(1.2); 
+		transform: translate(0px, -220px);
+	}
+	.product-planet:hover .product-info > p {
+		transform: scale(1.2); 
+		transform: translate(0px, -285px);
+		padding: 2em;
+	} 
+
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 800px) {
 	
 	.img-top {
-		display: flex;
-		min-height: 50vh;
-		background: url(../img/shop/img-top.svg);
-		background-size: cover; 
-		background-position: center; 
-		margin-top: 1.0em;
+		height: 50vh;
+		background: url(https://svs.gsfc.nasa.gov/vis/a030000/a031000/a031016/STScI-H-Whale_galaxy-h-4467x1217.png);
+		background-size: cover;
+		background-position:center; 
+		background-repeat:no-repeat; 
+		width: 100%;
 	}
-	.info-product {
-		font-family: 'Open Sans', sans-serif;
+	.product-planet {
+		min-height: 300px;
+		overflow: hidden;
+		transition: transform .8s ease; 
+		background: url(https://svs.gsfc.nasa.gov/vis/a030000/a031000/a031016/STScI-H-Whale_galaxy-h-4467x1217.png);
+		background-size: cover;
 	}
 
 	/* -----------second menu----------- */
 
 	.shop-menu {
-		font-family: ‘Alice’, serif;
-		font-size: 1em;	
+		font-family: Alice;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 1em;
+		margin-top: 0.2em
 	}
-	.shop-menu nav {
+	.shop-menu > nav {
+		font-family: Alice;
+		font-style: normal;
+		font-weight: normal;
+		margin: 0 6em 0 6em;
 		display: grid;
-		padding: 0em 1em 1em 1em;
+		padding: 1em 1em 1em 1em;
 		grid-template-columns: 1fr 1fr;
+		font-family: Alice;
 	}
 	.shop-menu > nav > a {
+		font-family: Alice;
+		font-style: normal;
+		font-weight: normal;
+		min-width: 150px;
 		align-self: stretch;
 		font-size: 0.9em;
 		text-decoration: none;
@@ -283,32 +668,164 @@
 		border-radius: 7px;
 		padding: 0.5em 0.5em 0.5em 0.5em;
 		margin: 0.5em;
+		font-family: Alice;
+	}
+	.shop-menu > nav > a:hover {
+		font-family: Alice;
+		font-style: normal;
+		font-weight: normal;
+		background-color: #E3E6EB;
+		transition: all 0.5s ease 0s;
 	}
 	.shop-menu > nav > a > span {
+		font-family: Alice;
+		font-style: normal;
+		font-weight: normal;
+		padding-left: 1em;
+		padding-right: 1em;
 		margin: auto;
 	}
 
 	/* -----------second menu----------- */
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 750px) {
 	.container {
 		display: grid;
 		grid-template-columns: 1fr;
 	}
-	.img-product-1 {
-		display: flex;
-		height: 40vh;
-		background: url(../img/shop/earth_moon.svg);
-		background-size: cover; 
+	.product-planet {
+		height: 350px;
+		overflow: hidden;
+		transition: transform .8s ease; 
+		background: url(https://svs.gsfc.nasa.gov/vis/a030000/a031000/a031016/STScI-H-Whale_galaxy-h-4467x1217.png);
+		background-size: cover;
+	}
+	.img-product-mercury {
+		height: 52vh;
+		background: url(../img/shop/planets/mercury.svg);
+		background-size: 80%; 
 		background-position: center; 
+		background-repeat:no-repeat;
+		margin: 1em;
+	}
+	.img-product-venus {
+		height: 52vh;
+		background: url(../img/shop/planets/venus.svg);
+		background-size: 80%; 
+		background-position: center;
+		background-repeat:no-repeat; 
 		margin-bottom: 1.0em;
+		margin: 1em;
 	}
-	.info-product {
-		font-family: 'Open Sans', sans-serif;
+	.img-product-earth {
+		height: 52vh;
+		background: url(../img/shop/planets/earth.svg);
+		background-size: 80%; 
+		background-position: center; 
+		background-repeat:no-repeat;
+		margin-bottom: 1.0em;
+		margin: 1em;
 	}
-	.product:hover .product-info {
-		transform: scale(1.2); /* Finally, transforming the image when container gets hovered */
-		transform: translate(0px, -225px);
+	.img-product-mars {
+		height: 52vh;
+		background: url(../img/shop/planets/mars.svg);
+		background-size: 80%; 
+		background-position: center; 
+		background-repeat:no-repeat;
+		margin-bottom: 1.0em;
+		margin: 1em;
 	}
+	.img-product-jupiter {
+		height: 52vh;
+		background: url(../img/shop/planets/jupiter.svg);
+		background-size: 80%; 
+		background-position: center; 
+		background-repeat:no-repeat;
+		margin-bottom: 1.0em;
+		margin: 1em;
+	}
+	.img-product-saturn {
+		height: 52vh;
+		background: url(../img/shop/planets/saturn.svg);
+		background-size: 75%; 
+		background-position: center; 
+		background-repeat:no-repeat;
+		margin: 1em 1em 4em 1em;
+	}
+	.img-product-uranus {
+		height: 52vh;
+		background: url(../img/shop/planets/uranus.svg);
+		background-size: 80%; 
+		background-position: center; 
+		background-repeat:no-repeat;
+		margin-bottom: 1.0em;
+		margin: 1em;
+	}
+	.img-product-neptune {
+		height: 52vh;
+		background: url(../img/shop/planets/neptune.svg);
+		background-size: 80%; 
+		background-position: center; 
+		background-repeat:no-repeat;
+		margin-bottom: 1.0em;
+		margin: 1em;
+	}
+		.img-product {
+			transform: scale(.7);
+		}
+		.product:hover .img-product {
+			transform: scale(0.70) translate(10%, -25%);
+		}
+		.product .product-info {
+			transition: transform .8s ease; 
+		}
+		.product:hover .product-info > p {
+			transition: transform .8s ease; 
+		}
+		.product:hover .product-info > h3 {
+			transition: transform .8s ease; 
+		}
+		.product:hover .product-info > h3 {
+			transform: scale(1.2); 
+			transform: translate(0px, -200px);
+		}
+		.product:hover .product-info > p {
+			transform: scale(1.2); 
+			transform: translate(0px, -200px);
+			padding: 2em;
+		} 
+}
+	@media only screen and (max-width: 450px) {
+		.shop-box {
+			background: transparent;
+		}
+		.container {
+			display: grid;
+			grid-template-columns: 1fr;
+		}
+		.img-product {
+			transform: scale(.9);
+		}
+		.product-planet:hover .img-product {
+			transform: scale(0.70) translate(30%, -25%);
+		}
+		.product-planet .product-info {
+			transition: transform .8s ease; 
+		}
+		.product-planet:hover .product-info > p {
+			transition: transform .8s ease; 
+		}
+		.product-planet:hover .product-info > h3 {
+			transition: transform .8s ease; 
+		}
+		.product-planet:hover .product-info > h3 {
+			transform: scale(1.2); 
+			transform: translate(0px, -255px);
+		}
+		.product-planet:hover .product-info > p {
+			padding: 2em;
+			transform: scale(1.2); 
+			transform: translate(0px, -320px);
+		} 
 }
