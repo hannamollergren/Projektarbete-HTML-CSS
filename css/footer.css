@@ -18,7 +18,6 @@ footer h3 {
     color: #DEA01E;
     font-size: 1.6em;
     padding: 0.7em;
-    margin-left: 1.5em;
 }
 footer p {
     font-family: ‘Open Sans’, sans-serif;
@@ -27,7 +26,7 @@ footer p {
 }
 .social-media > img {
     padding: 1em;
-    margin-left: 2em;
+    
 }
 .right {
     display: flex;
