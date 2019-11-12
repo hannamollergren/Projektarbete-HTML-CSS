@@ -1,100 +1,97 @@
 * {
-	padding: 0px;
-	margin: 0px;
-	box-sizing: border-box;
-}
-footer {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    background-color: #175384;
-    padding: 2.2em;
-    /* margin-top: 3em; */
-}
-footer h3 {
-    font-family: 'Alice', serif;
-    font-style: normal;
-    font-weight: normal;
-    color: #DEA01E;
-    font-size: 1.6em;
-    padding: 0.7em;
-}
-footer p {
-    font-family: 'Open Sans', sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    padding: 1.3em;
-    line-height: 1.8em;
-    margin-bottom: 1em;
-    color: #ffffff;
-}
-.social-media > a {
-    padding: 1em;
-    margin-left: 0.3em;
-}
-.right {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: auto 2em auto auto;
-}
-.logo-footer {
-    width: 220px;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-}
-.logo-footer-small {
-    display: none;
-}
-
-/* media-media-media-media-media-media */
-
-@media only screen and (max-width: 670px) {
-
-    footer {
-        display: flex;
-        flex-direction: column;
-        background-color: #175384;
-    }
-    footer h3 {
-        font-family: 'Alice', serif;
-        color: #DEA01E;
-        font-size: 1.6em;
-        text-align: center;
-    }
-    footer p {
-        font-family: 'Open Sans', sans-serif;
-        color: #ffffff;
-        text-align: center;
-        line-height: 1.8em;
-    }
-    .social-media {
-        width: 310px;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+ }
+ footer {
+   display: grid;
+   grid-template-columns: 2fr 1fr;
+   background-color: #175384;
+   padding: 2.2em;
+   /* margin-top: 3em; */
+ }
+ footer h3 {
+   font-family: 'Alice', serif;
+   font-style: normal;
+   font-weight: normal;
+   color: #DEA01E;
+   font-size: 1.6em;
+   padding: 0.7em;
+ }
+ footer p {
+   font-family: 'Open San', sans-serif;
+   font-style: normal;
+   font-weight: normal;
+   padding: 1.3em;
+   line-height: 1.8em;
+   margin-bottom: 1em;
+   color: #ffffff;
+ }
+ .social-media > a {
+   padding: 1em;
+   margin-left: 0.3em;
+ }
+ .right {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin: auto 2em auto auto;
+ }
+ .logo-footer {
+   width: 220px;
+   align-items: center;
+   justify-content: center;
+   margin: auto;
+ }
+ .logo-footer-small {
+   display: none;
+ }
+ /* media-media-media-media-media-media */
+ @media only screen and (max-width: 670px) {
+   footer {
+       display: flex;
+       flex-direction: column;
+       background-color: #175384;
+   }
+   footer h3 {
+       font-family: 'Alice', serif;
+       color: #DEA01E;
+       font-size: 1.6em;
+       text-align: center;
+   }
+   footer p {
+       font-family: 'Open Sans', sans-serif;
+       color: #ffffff;
+       text-align: center;
+       line-height: 1.8em;
+   }
+   .social-media {
+       width: 310px;
+       align-items: center;
+       justify-content: center;
+       padding-top: 1em;
+       padding-bottom: 1em;
+       margin: auto;
+       margin-bottom: 1em;
+   }
+   .left {
+       align-items: center;
+       justify-content: center;
+       margin: auto;
+   }
+   .right {
+       align-items: center;
+       justify-content: center;
+       margin: auto;
+   }
+   .logo-footer {
+       display: none;
+   }
+   .logo-footer-small {
+       display: block;
+       width: 220px;
         align-items: center;
-        justify-content: center;
-        padding-top: 1em;
-        padding-bottom: 1em;
-        margin: auto;
-        margin-bottom: 1em;
-    }
-    .left {
-        align-items: center;
-        justify-content: center;
-        margin: auto;
-    }
-    .right {
-        align-items: center;
-        justify-content: center;
-        margin: auto;
-    }
-    .logo-footer {
-        display: none;
-    }
-    .logo-footer-small {
-        display: block;
-        width: 220px;
-	    align-items: center;
-        justify-content: center;
-        margin: 1em auto auto auto;
-    }
-}
+       justify-content: center;
+       margin: 1em auto auto auto;
+   }
+ }

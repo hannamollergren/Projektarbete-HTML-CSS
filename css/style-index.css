@@ -1,86 +1,103 @@
-* { 
-  box-sizing: border-box; 
-	padding: 0px; margin: 0px;
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
-	font-family: ‘Alice’, serif;
+	font-family: Alice;
   	color: grey;
 }
 
 p {
-	font-family: ‘Open Sans’, serif;
+	font-family: 'Open Sans';
 	color: #3E4756;;
 	font-style: normal;
 	font-weight: normal;
 }
 
 h2 {
-	font-family: ‘Alice’, serif;
+	font-family: Alice;
 	color:#3E4756;
 	font-style: normal;
 	font-weight: normal;
 	
 }
 
-/* Stor bild top innehåll------------------------------------------------------*/
-/*-----------------------------------------------------------------------------*/
-.box-with-backg-top h2 { color:white; }
+/* Text-color on box-with-backg*/
+.box-with-backg1 h2 { color:white; }
+.box-with-backg1 p { color:white; }
+
 .box-with-backg2 h2 { color:white; }
-.box-with-backg3 h2 { color:white; }
-.box-with-backg4 h2 { color:white; }
-.box-with-backg-top p { color:white; }
 .box-with-backg2 p { color:white; }
+
+.box-with-backg3 h2 { color:white; }
 .box-with-backg3 p { color:white; }
+
+.box-with-backg4 h2 { color:white; }
 .box-with-backg4 p { color:white; }
 
-.box-with-backg-top {
+/* Stor bild top innehåll------------------------------------------------------*/
+/*-----------------------------------------------------------------------------*/
+
+
+.box-with-backg1 {
 	display: flex;
 	min-height: 50vh;
 	background: url(../img/index/top-pic-space.jpg);
-	/*background-repeat: no-repeat; */ /* If backgriund repeat*/
+	/*background-repeat: no-repeat; */ /* If backgroundund repeat*/
 	background-size: cover;
 	background-position: center;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	margin-top: 1.5em;
-	
+	padding: 2em;
 }
 
 /* Bakgrund till boxinside, blir transparent vid skalning */
-.box-inside-backg {
-	background:rgba(63, 112, 164, 0.4);
+.box-inside-backg1 {
+	background: rgba(73, 110, 145, 0.4)
 }
 
 /* Box inuti stor topp-bild */
-.box-inside {
+.box-inside1 {
 	display: flex;
-	flex-basis: 250px;
+	flex-basis: 16em;
 	color: white;
-	max-width: 500px;
+	max-width: 30em;
 	flex-direction: column;
 	align-items: center;
 	text-align: center;
 	border-radius: 3px;
-	padding:35px 45px 35px 45px;
-	height: 700px;
+	padding: 2em;
+	
   }
 
   /* Knapp stylad, ej button */
-  .button {
+  .button1 {
 	display: flex;
 	font-size: 0.9em;
-	width: 9em;
+	width: 8em;
 	height: 2.9em;
 	color: white;
 	align-items: center;
 	justify-content: center;
 	border-radius: 4px;
-	padding: auto;
 	border: 1px solid white;
 	margin-top: 2.5em;
+	background-color: rgb(68, 100, 134);
+	cursor: pointer;
 }
+
+.button1:hover {
+	background-color: rgb(83, 125, 170);
+	transition: background-color 0.2s;
+}
+
+.box-with-backg1 a {
+	font-family: 'Open Sans';
+	text-decoration: none;
+}
+
 /*-----------------------------------------------------------------------------*/
 /* Stor bild top innehåll avslut-----------------------------------------------*/
 
@@ -96,6 +113,7 @@ h2 {
 	flex-direction: column;
 	align-items: flex-end;
 	justify-content: center;
+	padding: 2em;
 	/*padding-right: 5em; */ /*Margin 10 %in box-inside instead */
 }
 
@@ -107,33 +125,43 @@ h2 {
 /* Box inuti stor topp-bild */
 .box-inside2 {
 	display: flex;
-	flex-basis: 250px;
+	flex-basis: 16em;
 	color: white;
-	max-width: 500px;
+	max-width: 30em;
 	flex-direction: column;
 	align-items: center;
 	text-align: center;
 	border-radius: 3px;
-	padding:35px 45px 35px 45px;
-	height: 700px;
-	margin-right: 10%;
+	padding: 2em;
+	margin-right: 7%;
   }
 
   /* Knapp stylad, ej button */
   .button2 {
 	display: flex;
 	font-size: 0.9em;
-	width: 9em;
+	width: 8em;
 	height: 2.9em;
 	color: white;
 	background: #00998E;
 	align-items: center;
 	justify-content: center;
 	border-radius: 4px;
-	padding: auto;
 	border: 1px solid white;
 	margin-top: 2.5em;
+	cursor: pointer;
 }
+
+.button2:hover {
+	background-color: rgb(82, 180, 174);
+	transition: background-color 0.2s;
+}
+
+.box-with-backg2 a {
+	font-family: 'Open Sans';
+	text-decoration: none;
+}
+
 /*-----------------------------------------------------------------------------*/
 /* Stor bild top innehåll avslut 2---------------------------------------------*/
 
@@ -150,43 +178,53 @@ h2 {
 	flex-direction: column;
 	align-items: flex-start;
 	justify-content: center;
+	padding: 2em;
 	/* padding-left: 5em; */ /*Margin 10 %in box-inside instead */
 }
 
 /* Bakgrund till boxinside, blir transparent vid skalning */
 .box-inside-backg3 {
-	background:rgba(216, 138, 162, 0.7);
+	background:rgba(216, 138, 162, 0.8);
 }
 
 /* Box inuti stor topp-bild */
 .box-inside3 {
 	display: flex;
-	flex-basis: 250px;
+	flex-basis: 16em;
 	color: white;
-	max-width: 500px;
+	max-width: 30em;
 	flex-direction: column;
 	align-items: center;
 	text-align: center;
 	border-radius: 3px;
-	padding:35px 45px 35px 45px;
-	height: 700px;
-	margin-left: 10%;
+	padding: 2em;
+	margin-left: 7%;
   }
 
   /* Knapp stylad, ej button */
-  .button3 {
+.button3 {
 	display: flex;
 	font-size: 0.9em;
-	width: 9em;
+	width: 8em;
 	height: 2.9em;
 	color: white;
-	background: #DEA01E;;
+	background: #DEA01E;
 	align-items: center;
 	justify-content: center;
 	border-radius: 4px;
-	padding: auto;
 	border: 1px solid white;
 	margin-top: 2.5em;
+	cursor: pointer;
+}
+
+.button3:hover {
+	background-color: rgb(233, 167, 81);
+	transition: background-color 0.2s;
+  }
+
+.box-with-backg3 a {
+	font-family: 'Open Sans';
+	text-decoration: none;
 }
 /*-----------------------------------------------------------------------------*/
 /* Stor bild top innehåll avslut 3---------------------------------------------*/
@@ -204,6 +242,7 @@ h2 {
 	flex-direction: column;
 	align-items: flex-end;
 	justify-content: center;
+	padding: 2em;
 	/* padding-right: 5em; */ /*Margin 10 %in box-inside instead */
 }
 
@@ -215,15 +254,14 @@ h2 {
 /* Box inuti stor topp-bild */
 .box-inside4 {
 	display: flex;
-	flex-basis: 250px;
+	flex-basis: 16em;
 	color: white;
-	max-width: 500px;
+	max-width: 30em;
 	flex-direction: column;
 	align-items: center;
 	text-align: center;
 	border-radius: 3px;
-	padding:35px 45px 35px 45px;
-	height: 700px;
+	padding: 2em;
 	margin-right: 10%;
   }
 
@@ -231,62 +269,73 @@ h2 {
   .button4 {
 	display: flex;
 	font-size: 0.9em;
-	width: 9em;
+	width: 8em;
 	height: 2.9em;
 	color: white;
-	/* background: #00998E; */
+	background: rgb(66, 83, 82);
 	align-items: center;
 	justify-content: center;
 	border-radius: 4px;
-	padding: auto;
 	border: 1px solid white;
 	margin-top: 2.5em;
+	cursor: pointer;
+}
+
+.button4:hover {
+	background-color: rgb(97, 119, 118);
+	transition: background-color 0.2s;
+  }
+
+.box-with-backg4 a {
+	font-family: 'Open Sans';
+	text-decoration: none;
 }
 /*-----------------------------------------------------------------------------*/
 /* Stor bild top innehåll avslut 4---------------------------------------------*/
 
 
-
-
-
 /*Div med text, mellanrum */
-.between-sections {
+.space-between-sections {
 	margin-top: 2.9em;	
-	margin-bottom: 1.3em;	
+	margin-bottom: 1em;	
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	text-decoration: underline  rgb(113, 176, 243);
+	flex-wrap: wrap;
 }
+
+.space-between-sections h2 {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.space-between-sections h2::after { /* Small line */
+	content: '';
+	width: 40%;
+	height: 2px;
+	margin-top: 2px;
+	background: #3F70A4;
+  }
+/*Div med text, mellanrum avslut */
  
 
 /* Kolumnstruktur------------------------------------------------------------*/
 /* Wrapper runt kolumner */
-.wrapper {
-	padding: 0px; /* Padding runtom wrappern */
-	max-width: 1400px; /*Maxbredd på de tre kolumnerna i helskärm */
-	width: 100%; /*Totatla bredden på de tre kolumnerna i helskärm */
-	margin: 0 auto; /* 10px= mellanrum mellan header och de 3 kolumnerna, auto= centrering av 3 kolumner */
-}
+
 
 /* Wrapper runt kolumner */
-.columns {
+.columns-wrapper {
 	display: flex;
 	flex-flow: row wrap; /* Gör så att kolumnerna wrappar runt varandra/hoppar ner */
 	justify-content: center;
-	margin: 0px 0;  /* 5px= top margin is 5px , right margin is 0 */
+	padding-right: 5em; /* Padding insida wrappern */
+	padding-left: 5em; /* Padding insida wrappern */
+    max-width: 1920px; /*Maxbredd på de tre kolumnerna i helskärm, kan sättas till 100% om man vill ha den ut till kanten */
+    width: 100%; /*Totatla bredden på de tre kolumnerna i helskärm */
+	margin: 0px auto; /* 10px= mellanrum mellan header och de 3 kolumnerna, auto= centrering av 3 kolumner */
 }
 
-/* Mellanrum mellan rubrik och text i kolumner */
-.column > h2 {
-	margin-bottom: 0.1em;;
-}
-
-/* Länkstyling i kolumner */
-.column > a {
-	color: #3F70A4;;
-	text-decoration: none;
-}
 
 /* Kolumnceller */
 .column {
@@ -297,33 +346,155 @@ h2 {
                      take up screen as per the screen size available for
                      e.g:- if 3 divs are in the wrapper then each div will take 33% */
 	border: 1px solid #C4C4C4;
-	border-bottom: 1px solid black;
-	margin: 0em 2em 1em 2em; /* Mellanrum/margin mellan varge kolumn*/
-	padding-bottom: 1em; /* Padding inre mellanrummet mellan text och border på varge kolumn */
+	margin: 0em 2em 0em; /* Mellanrum/margin mellan varge kolumn*/
+	/* padding-bottom: 1em;  Padding inre mellanrummet mellan text och border på varge kolumn */
 	justify-content: center;
 	text-align: center;
 	border-radius: 5px;
+	flex-direction: column;
 }
 
+.column:first-child { margin-left: 0; }
+.column:last-child { margin-right: 0; }
+
+.text-inside-column {
+	padding: 0 1.3em 0.5em 1.3em;
+}
+
+span.price-text { 
+	color:rgb(43, 110, 187);
+	font-family: Alice;
+ }
+
+/* Mellanrum mellan rubrik och text i kolumner */
+.column h2 {
+	margin-bottom: 0.1em;
+}
+
+.column p {
+	color: #3E4756;
+	font-size: 0.9em
+	
+}
+
+/* Länkstyling i kolumner */
+a.column-links {	
+	color: #3F70A4;
+	text-decoration: none;
+	font-family: Alice;
+}
 /* Skalning på bilder i kolumnerna */
 .pic-scale-column {
 	width: 100%;
 	height: auto;
-	margin-bottom: 1em;
+	/* margin-bottom: 1em; */
 	border-radius: 5px 5px 0px 0px;
   }
+
+
 /* Kolumnstruktur Avslut------------------------------------------------------------*/
 
-footer {
-	padding: 0 15px;
-	border: 1px solid gray;
-  
+/* Grid small celestial*/
+.wrapper-small-celestial {
+	width: 100%;
+	border-top: 1px solid #C4C4C4;
+	border-bottom: 1px solid #C4C4C4;
+	padding: 1em;
 }
+
+.container-small-celestial > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    color: #ffeead;
+}
+
+.container-small-celestial > div > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+	border-radius: 3px;
+	opacity: 0.6;
+    transition: opacity .6s;
+}
+
+.container-small-celestial > div > img:hover {
+	opacity: 1;
+  }
+
+.container-small-celestial {
+    display: grid;
+    grid-gap: 1em;
+    grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+    grid-auto-rows: 90px;
+}
+
+.wrapper-small-celestial > h2 {
+	text-align: center;
+} /* Grid small celestial avslut */
+/*Avslut small-celestial------------------*/
+
+
+/* Rocket-----------------------------------*/
+.rocket {
+    background: transparent;
+    cursor: pointer;
+    position: fixed;
+    border: none;
+    border-radius: 4px;
+    margin: 1em 0 1em 0;
+    bottom: 2em;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    z-index: 200;
+}
+.rocket:hover {
+    animation: bounce 0.4s infinite;
+}
+
+.fire {
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    margin: 2em -.7em .4em 0;
+    border: none;
+    bottom: -2em;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    z-index: 200;
+    transition: transform .8s ease;
+}
+
+.rocket:hover .fire{
+    display: block;
+}
+
+@keyframes bounce {
+    0% {
+      transform: translate3d(0px, 0px, 0);
+    }
+    50% {
+      transform: translate3d(0px, -5px, 0);
+    }
+    100% {
+      transform: translate3d(0px, 0px, 0);
+    }
+}
+
+/*-----------------------Rocekt avslut */
+
 
 
 @media screen and (max-width: 980px) {
+	.columns {
+		padding-right: 0em; /* Padding insida wrappern */
+		padding-left: 0em;
+	}
+
 	.columns .column {
-		margin-bottom: 5px; /*Margin mellan kolumn 2 och 3 när sidan går under 980px */
 		flex-basis: 40%; /*När flexbasis går under 40% wrapppas den */
   	}
 
@@ -335,19 +506,55 @@ footer {
 		flex-basis: 40%; /*När flexbasis går under 40% wrapppas den */
 		margin: 0;  /*Margin åt alla håll på kolumn 3 när sidan går under 980px */
 		}
+
+	/* Make boxes inside centered */
+	.box-with-backg2 { align-items: center;}
+	.box-inside2 {margin-right: 0;}
+
+	.box-with-backg3 { align-items: center;}
+	.box-inside3 {margin-left: 0;}
+
+	.box-with-backg4 { align-items: center;}
+	.box-inside4 {margin-right: 0;}
 	
 } /* Avslut mediaqueries 980px */
 
 
 @media screen and (max-width: 680px) {
+	.columns {
+		padding-right: 0em; /* Padding insida wrappern */
+		padding-left: 0em;
+	}
+
 	.columns .column {
 		flex-basis: 100%; /*När flexbasis är 100% wrappas den och kommer på egen rad */
 		margin: 0 0 5px 0; /* bottom margin är 5px, blir mellanrummet mellan kolumnerna på höjden när fönstert är under 680px */
 	}
 
 	/* Bakgrund försvinner i inre topbox */
-	.box-inside-backg {
+	.box-inside-backg1 {
 		background-color: transparent;
 	}
 
+	.box-inside-backg2 {
+		background:rgba(222, 160, 30, 0.92);
+	}
+
+	.box-inside-backg3 {
+		background:rgba(216, 138, 162, 0.92);
+	}
+
+	.wrapper-small-celestial {
+	padding: 1em 0 1em 0;
+	}
+
 } /* Avslut mediaqueries 680px */
+
+/* Media Queries small-celestial */
+
+@media screen and (min-width: 1024px){
+	.wrapper-small-celestial {
+		width: 960px;
+		margin: 0 auto;
+	}
+}

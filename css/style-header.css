@@ -1,139 +1,159 @@
 * {
+<<<<<<< HEAD
 	padding: 0px;
 	margin: 0px;
 	box-sizing: border-box;
 }
 .logo-bar {
 	margin: auto;
+=======
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.logo-bar {
+    margin: auto;
+>>>>>>> tobias2
 }
 .logo-link {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 .logo {
-	width: 220px;
-	flex-basis: 110px;
-	position: relative;
-	padding: 2em;
+    width: 220px;
+    flex-basis: 110px;
+    position: relative;
+    padding: 2em;
 }
 header {
+<<<<<<< HEAD
 	font-family: 'Alice', serif;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 1em;
 	display: flex;
 	flex-direction: column;
+=======
+    font-family: 'Alice', serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1em;
+    display: flex;
+    flex-direction: column;
+>>>>>>> tobias2
 }
 nav {
-	display: flex;
-	padding: 0em 1em 1em 1em;
-	justify-content: center;
+    display: flex;
+    padding: 0em 1em 1em 1em;
+    justify-content: center;
 }
 nav a {
-	text-decoration: none;
-	color: #175384;
-	display: flex;
-	flex-direction: row;
-	padding: 0em 2em 0em 2em;
+    text-decoration: none;
+    color: #175384;
+    display: flex;
+    flex-direction: row;
+    padding: 0em 2em 0em 2em;
+}
+nav a:hover {
+    color: #DEA01E;
+    transition: all 0.3s ease 0s;
 }
 nav a:hover {
 	color: #DEA01E;
 	transition: all 0.3s ease 0s;
 }
 .label {
-	display: none;
+    display: none;
 }
 .menu {
-	display: none;
+    display: none;
 }
-
 /* media-media-media-media-media-media */
-
 @media only screen and (max-width: 600px) {
-	nav {
-		display: none;
-	}
-	.label {
-		display: flex;
-		position: relative;
-		background-color: #E3E6EB;
-		cursor: pointer;
-		margin: 0 auto 1.5em auto;
-		padding: 0.4em 0.8em 0.4em 0.8em;
-		border-radius: 0.4em;
-		width: 275px;
-	}
-	.label span {
-		font-family: 'Alice', serif;
-		font-style: normal;
-		font-weight: normal;
-		color: #3F70A4;
-		margin: auto 0em auto 1em;
-	}
-	.hamburger-icon {	
-		display: flex;
-		color: #3F70A4;
-		justify-content: right;
-		margin: auto 1em auto auto;
-	}
-	.menu {
-		display: block;
-		position: absolute;
-		background-color: #ffffff;
-		cursor: pointer;
-		font-family: Alice;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 0.9em;
-		top: 12.3em;
-		z-index: 100;
-		width: 275px;
-		margin-left:auto;
-		margin-right:auto;
-		left:0;
-		right:0;
-		transition: all 0.8s ease-in-out 0s;
-		opacity: 100%;
-		border-radius: 0 0 4px 4px;
-	}
-	.menu li {
-		display: none;			
-		list-style: none;
-		padding: 1em;
-		border-bottom: 0.5px solid #3F70A4;
-		cursor: pointer;
-	}
-	.menu li:last-child {
-		border-radius: 0 0 4px 4px;
-	}
-	.menu li:first-child {
-		padding: 0.8em;
-	}
-	.menu li:first-child:hover {
-		background-color: #ffffff;
-	}
-	.menu li:nth-child(2) {
-		border-top: 2px solid #3F70A4;
-	}
-	.menu li a {
-		display: block;
-		text-decoration: none;
-		color: #175384;
-	}
-	.label:hover + .menu > li {
-		display: block;
-		background-color: #ffffff;
-		transition: all 0.8s ease 0s;
-	}
-	.menu:hover li {
-		display: block;
-		background-color: #ffffff;
-		transition: all 0.2s ease 0s;
-	}
-	.menu > li:hover {
-		display: block;
-		background-color: #E3E6EB;
-		transition: all 0.2s ease 0s;
-	}
+    nav {
+        display: none;
+    }
+    .label {
+        display: flex;
+        position: relative;
+        background-color: #E3E6EB;
+        cursor: pointer;
+        margin: 0 auto 1.5em auto;
+        padding: 0.4em 0.8em 0.4em 0.8em;
+        border-radius: 0.4em;
+        width: 275px;
+    }
+    .label span {
+        font-family: Alice;
+        font-style: normal;
+        font-weight: normal;
+        color: #3F70A4;
+        margin: auto 0em auto 1em;
+    }
+    .hamburger-icon {    
+        display: flex;
+        color: #3F70A4;
+        justify-content: right;
+        margin: auto 1em auto auto;
+    }
+    .menu {
+        display: block;
+        position: absolute;
+        background-color: #ffffff;
+        cursor: pointer;
+        font-family: Alice;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 0.9em;
+        top: 12.3em;
+        z-index: 100;
+        width: 275px;
+        margin-left:auto;
+        margin-right:auto;
+        left:0;
+        right:0;
+        transition: all 0.8s ease-in-out 0s;
+        opacity: 100%;
+        border-radius: 0 0 4px 4px;
+    }
+    .menu li {
+        display: none;            
+        list-style: none;
+        padding: 1em;
+        border-bottom: 0.5px solid #3F70A4;
+        cursor: pointer;
+    }
+    .menu li:last-child {
+        border-radius: 0 0 4px 4px;
+    }
+    .menu li:first-child {
+        padding: 0.8em;
+    }
+    .menu li:first-child:hover {
+        background-color: #ffffff;
+    }
+    .menu li:nth-child(2) {
+        border-top: 2px solid #3F70A4;
+    }
+    .menu li a {
+        display: block;
+        text-decoration: none;
+        color: #175384;
+    }
+    .label:hover + .menu > li {
+        display: block;
+        background-color: #ffffff;
+        transition: all 0.8s ease 0s;
+    }
+    .menu:hover li {
+        display: block;
+        background-color: #ffffff;
+        transition: all 0.2s ease 0s;
+    }
+    .menu > li:hover {
+        display: block;
+        background-color: #E3E6EB;
+        transition: all 0.2s ease 0s;
+    }
 }
