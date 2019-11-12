@@ -1,5 +1,9 @@
 /* general style parent display flex: flex direction row - flex column negativ margin */
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     text-align: center;
     font-family: 'Roboto', sans-serif;
@@ -15,7 +19,6 @@ h6 {
     margin-left: 2em;
     margin-right: 2em;
     line-height: 1.7em;
-    padding: 1em 1em;
 }
 
 p {
@@ -44,7 +47,7 @@ a {
 
 .hero {
     /* Sizing */
-    height: 25%;
+    height: 50vh;
     width: auto;
     /* Flexbox */
     display: flex;
@@ -66,8 +69,8 @@ a {
     /* Text style */
     font-size: 3em;
     color: white;
-    /* Margins */
-    margin-bottom: 2.5em;
+    /* Margins 
+    margin-bottom: 2.5em;*/
 }
 
 .hero h2 {
@@ -76,7 +79,7 @@ a {
 
 .hero .btn {
     /* Positioning and sizing */
-    display: inline-block;
+    display: flex;
     width: 125px;
     height: auto;
     /* Padding and margins */
@@ -122,28 +125,43 @@ a {
     padding-bottom: 8em;
 }
 
+
+/*
 .container-3 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
+*/
 
-.container-1 div,
-.container-1b div {
+.flex>div
+/* .container-1 div,
+.container-1b div */
+
+{
     border: 1px #ccc solid;
-    padding: 10px;
+    padding: 0px;
+    margin-bottom: 1em;
+}
+
+.flex>div:nth-child(odd)>div:first-child,
+.flex>div:nth-child(even)>div:last-child {
+    flex: 1;
+}
+
+.flex>div:nth-child(odd)>div:last-child,
+.flex>div:nth-child(even)>div:first-child {
+    flex: 2;
 }
 
 
 /*text*/
 
 .box-1 {
-    flex: 1;
-    order: 1;
     background-color: #bdbdbd;
 }
 
-.box-1 .btn {
+.flex .btn {
     /* Positioning and sizing */
     display: block;
     width: 120px;
@@ -170,25 +188,13 @@ a {
 
 /*bild*/
 
-.box-2 {
-    flex: 2;
-    order: 2;
-}
-
 
 /*bild*/
-
-.box-3 {
-    flex: 2;
-    order: 1;
-}
 
 
 /*text*/
 
 .box-4 {
-    flex: 1;
-    order: 2;
     background-color: #d88aa2;
 }
 
@@ -211,7 +217,7 @@ a {
     background-color: rgba(222, 160, 30, 0.8);
 }
 
-.btn:hover {
+.flex .btn:hover {
     background: #98603d;
     color: #333;
 }
@@ -220,8 +226,6 @@ a {
 /*text*/
 
 .box-5 {
-    flex: 1;
-    order: 1;
     background-color: #3f70a4;
 }
 
@@ -252,25 +256,13 @@ a {
 
 /*bild*/
 
-.box-6 {
-    flex: 2;
-    order: 2;
-}
-
 
 /*bild*/
-
-.box-7 {
-    flex: 2;
-    order: 1;
-}
 
 
 /*text*/
 
 .box-8 {
-    flex: 1;
-    order: 2;
     background-color: #00998e;
 }
 
@@ -307,16 +299,79 @@ a {
 }
 
 
+/*rocket*/
+
+.rocket {
+    background: transparent;
+    cursor: pointer;
+    position: fixed;
+    border: none;
+    border-radius: 4px;
+    margin: 1em 0 1em 0;
+    bottom: 2em;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    z-index: 200;
+}
+
+.rocket:hover {
+    animation: bounce 0.4s infinite;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translate3d(0px, 0px, 0);
+    }
+    50% {
+        transform: translate3d(0px, -5px, 0);
+    }
+    100% {
+        transform: translate3d(0px, 0px, 0);
+    }
+}
+
+.fire {
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    border: none;
+    bottom: -2em;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    z-index: 200;
+    transition: transform .8s ease;
+}
+
+.rocket:hover .fire {
+    display: block;
+}
+
+
 /*Queries */
 
+
+/*Flex */
+
+.container-1,
+.container-1b {
+    display: flex;
+}
+
+@media (max-width: 599px) {
+    .flex>div {
+        flex-direction: column;
+    }
+    .flex>div:nth-child(even)>div:first-child {
+        order: 2;
+    }
+    .flex>div:nth-child(even)>div:last-child {
+        order: 1;
+    }
+}
+
 @media (min-width: 600px) {
-    /*Flex */
-    .container-1 {
-        display: flex;
-    }
-    .container-1b {
-        display: flex;
-    }
     /*Grid */
     .grid {
         display: grid;
