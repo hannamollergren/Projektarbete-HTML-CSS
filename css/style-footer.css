@@ -2,10 +2,6 @@
 	padding: 0px;
 	margin: 0px;
 	box-sizing: border-box;
-	-webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
 }
 footer {
     display: grid;
@@ -15,7 +11,7 @@ footer {
     /* margin-top: 3em; */
 }
 footer h3 {
-    font-family: Alice;
+    font-family: 'Alice', serif;
     font-style: normal;
     font-weight: normal;
     color: #DEA01E;
@@ -23,7 +19,7 @@ footer h3 {
     padding: 0.7em;
 }
 footer p {
-    font-family: Open Sans;
+    font-family: 'Open Sans', sans-serif;
     font-style: normal;
     font-weight: normal;
     padding: 1.3em;
@@ -61,13 +57,13 @@ footer p {
         background-color: #175384;
     }
     footer h3 {
-        font-family: ‘Alice’, serif;
+        font-family: 'Alice', serif;
         color: #DEA01E;
         font-size: 1.6em;
         text-align: center;
     }
     footer p {
-        font-family: ‘Open Sans’, sans-serif;
+        font-family: 'Open Sans', sans-serif;
         color: #ffffff;
         text-align: center;
         line-height: 1.8em;

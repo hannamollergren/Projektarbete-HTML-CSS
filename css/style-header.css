@@ -2,10 +2,6 @@
 	padding: 0px;
 	margin: 0px;
 	box-sizing: border-box;
-	-webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
 }
 .logo-bar {
 	margin: auto;
@@ -22,7 +18,7 @@
 	padding: 2em;
 }
 header {
-	font-family: Alice;
+	font-family: 'Alice', serif;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 1em;
@@ -69,7 +65,7 @@ nav a:hover {
 		width: 275px;
 	}
 	.label span {
-		font-family: Alice;
+		font-family: 'Alice', serif;
 		font-style: normal;
 		font-weight: normal;
 		color: #3F70A4;
