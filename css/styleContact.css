@@ -200,6 +200,7 @@ h1, h2, h3, h4, h5, h6{
     display: none;
     cursor: pointer;
     position: absolute;
+    margin: 2em -.7em .4em 0;
     border: none;
     bottom: -2em;
     right: 0;

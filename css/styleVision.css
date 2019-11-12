@@ -101,7 +101,7 @@ h1{
     color: white;
     display: inline-block;
     text-decoration: none;
-    padding: 8px 20px;
+    padding: 6px 28px;
     margin-bottom: 1em;
 } 
 .grid-header-text1 a > p:hover{
@@ -146,7 +146,7 @@ h1{
     grid-template-rows: auto;
     grid-column-gap: 3em;
     grid-row-gap: 3em;
-    margin: 0 5em 1em 5em;
+    margin: 0 5em 3em 5em;
     
 }
 .vision-container > div {
@@ -209,6 +209,7 @@ html {
     display: none;
     cursor: pointer;
     position: absolute;
+    margin: 2em -.7em .4em 0;
     border: none;
     bottom: -2em;
     right: 0;
