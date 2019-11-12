@@ -76,7 +76,7 @@ h2 {
   .button1 {
 	display: flex;
 	font-size: 0.9em;
-	width: 9em;
+	width: 8em;
 	height: 2.9em;
 	color: white;
 	align-items: center;
@@ -140,7 +140,7 @@ h2 {
   .button2 {
 	display: flex;
 	font-size: 0.9em;
-	width: 9em;
+	width: 8em;
 	height: 2.9em;
 	color: white;
 	background: #00998E;
@@ -205,7 +205,7 @@ h2 {
 .button3 {
 	display: flex;
 	font-size: 0.9em;
-	width: 9em;
+	width: 8em;
 	height: 2.9em;
 	color: white;
 	background: #DEA01E;
@@ -269,7 +269,7 @@ h2 {
   .button4 {
 	display: flex;
 	font-size: 0.9em;
-	width: 9em;
+	width: 8em;
 	height: 2.9em;
 	color: white;
 	background: rgb(66, 83, 82);
@@ -325,7 +325,7 @@ h2 {
 
 
 /* Wrapper runt kolumner */
-.columns {
+.columns-wrapper {
 	display: flex;
 	flex-flow: row wrap; /* Gör så att kolumnerna wrappar runt varandra/hoppar ner */
 	justify-content: center;
@@ -458,6 +458,7 @@ a.column-links {
     display: none;
     cursor: pointer;
     position: absolute;
+    margin: 2em -.7em .4em 0;
     border: none;
     bottom: -2em;
     right: 0;
@@ -466,6 +467,7 @@ a.column-links {
     z-index: 200;
     transition: transform .8s ease;
 }
+
 .rocket:hover .fire{
     display: block;
 }
