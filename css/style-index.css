@@ -325,7 +325,7 @@ h2 {
 
 
 /* Wrapper runt kolumner */
-.columns-wrapper {
+.columns {
 	display: flex;
 	flex-flow: row wrap; /* Gör så att kolumnerna wrappar runt varandra/hoppar ner */
 	justify-content: center;
