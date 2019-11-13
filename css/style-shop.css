@@ -578,6 +578,7 @@ html {
 .product-galaxy:hover .product-info > h3 {
 	transform: scale(1); 
 	transform: translate(0px, -350px);
+	margin: auto;
 }
 .product-planet:hover .product-info > p {
 	transform: scale(1.2); 
@@ -593,6 +594,7 @@ html {
 	transform: scale(1); 
 	transform: translate(0px, -400px);
 	padding: 2em;
+	text-align: center;
 } 
 .product-galaxy:hover .img-product {
 	transform: scale(1);
