@@ -43,7 +43,7 @@ h1, h2, h3, h4, h5, h6{
   }
   .contact-image1 {   
     display: flex;
-    min-height: 400px;
+    min-height: 50vh;
     background: url(../img/imageContact/imageContact.jpg);
     background-size: cover;
     background-position: center;
