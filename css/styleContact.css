@@ -1,10 +1,6 @@
 *{
     padding: 0px; margin: 0px;
     box-sizing: border-box;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
 }
 a{
     text-decoration: none;
@@ -32,30 +28,28 @@ html, body {
 /* Text */
 p{
     font-family: 'Open Sans', sans-serif;
-    margin-left: 2em;
-    margin-right: 2em;
     line-height: 1.8em;
 
 }
 h1, h2, h3, h4, h5, h6{
     font-family: 'Alice', serif;
 }
+/* Stora bilden */
 .contact-image {
     display: grid;
     grid-gap: 20px;
     grid-template-areas:
       'image image ';
   }
-  .contact-image1 {   /* Stora bilden */
+  .contact-image1 {   
     display: flex;
     min-height: 50vh;
-    background: url(../img/imageContact1/spaceman.jpeg);
+    background: url(../img/imageContact/imageContact.jpg);
     background-size: cover;
     background-position: center;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 1.5em;
  }
   .box-inside {
     flex-basis: 100px;
@@ -64,10 +58,9 @@ h1, h2, h3, h4, h5, h6{
     display: flex;
     flex-direction: column;
     border-radius: 3px;
-    background: rgba(222, 160, 30, 0.8);
+    background: rgba(222, 160, 30, 0.7);
 }
 .contact-image-text{
-    text-align: center;
     color: white;
     padding: 1em; 
     font-size: 1.8em;
@@ -79,7 +72,7 @@ h1, h2, h3, h4, h5, h6{
     flex-direction: row;
     justify-content: center;
     align-items: flex-end;
-    padding: 2em 0;
+    margin: 3em 0 1em 0;
 }
 .contact-title2{
     position: relative;
@@ -91,12 +84,13 @@ h1, h2, h3, h4, h5, h6{
 .contact-border{
     justify-content: center;
     position: absolute;
-    border: 2px solid #175384;
+    border: 1px solid #175384;
     width: 35px;
     height: 0px;    
 }  
 
 .sub-text{
+    padding: 0 2em;
     text-align: center;
 }
 /*Kontaktformulär*/
@@ -104,11 +98,11 @@ h1, h2, h3, h4, h5, h6{
     color: #3E4756;
     line-height: 1.6;
     font-family: 'Open Sans', sans-serif;
-    max-width: 2000px;
+    max-width: 2000px; /* Kontaktformuläret sträcks inte ut tillräckligt(så som jag vill ha det) om inte width uppges */
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 2em;
-    margin: 2em 5em 2em 5em;
+    margin: 2em 5em 3em 5em;
   }
 
   /*Form*/
@@ -129,6 +123,7 @@ h1, h2, h3, h4, h5, h6{
   
 .contact form .width{
     grid-column: 1 / 3 ;
+    font-size: 1em;
   }
   
 .contact form button, .contact form input, .contact form textarea{
@@ -143,17 +138,84 @@ h1, h2, h3, h4, h5, h6{
     background:rgba(222, 160, 30);
     color: white;
     border: transparent;
-    font-size: 1em;
+    font-size: 1.2em;
+    font-family: 'Alice', serif;
+    transition: 0.6s;
 }
   
 .contact form button:hover{
     cursor: pointer;
+    background: rgba(222, 160, 30, 0.8);
+
+}
+.big-map{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas:
+      'image image ';
+  }
+  .big-map1 {   
+    display: flex;
+    min-height: 400px;
+    background: url(../img/imageContact/map.svg);
+    background-size: cover;
+    background-position: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+ }
+
+ /*Rocket*/
+ html {
+    scroll-behavior: smooth;
+}
+ .rocket {
+    background: transparent;
+    cursor: pointer;
+    position: fixed;
+    border: none;
+    border-radius: 4px;
+    margin: 1em 0 1em 0;
+    bottom: 2em;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    z-index: 200;
+}
+.rocket:hover {
+    animation: bounce 0.4s infinite;
+}
+@keyframes bounce {
+    0% {
+      transform: translate3d(0px, 0px, 0);
+    }
+    50% {
+      transform: translate3d(0px, -5px, 0);
+    }
+    100% {
+      transform: translate3d(0px, 0px, 0);
+    }
+}
+.fire {
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    margin: 2em -.7em .4em 0;
+    border: none;
+    bottom: -2em;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    z-index: 200;
+    transition: transform .8s ease;
+}
+.rocket:hover .fire{
+    display: block;
 }
 
-  
 /*Media*/
 @media only screen and (max-width: 600px){
 .container-form{
-    margin: 2em 2em 2em 2em;
+    margin: 2em 2em 3em 2em;
   }
 }

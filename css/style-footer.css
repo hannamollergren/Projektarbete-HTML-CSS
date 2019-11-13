@@ -1,75 +1,105 @@
 * {
-	padding: 0px;
-	margin: 0px;
-	box-sizing: border-box;
-	-webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
 }
+
 footer {
     display: grid;
     grid-template-columns: 2fr 1fr;
     background-color: #175384;
-    padding: 2.2em;
-    margin-top: 3em;
+    padding: .5em;
 }
+
 footer h3 {
-    font-family: ‘Alice’, serif;
+    font-family: 'Alice', serif;
+    font-style: normal;
+    font-weight: normal;
     color: #DEA01E;
-    font-size: 1.6em;
-    padding: 0.7em;
+    font-size: 2em;
+    padding-left: 0.5em;
+    padding-bottom: .5em;
+    padding-top: 1em;
 }
+
 footer p {
-    font-family: ‘Open Sans’, sans-serif;
-    padding: 1.3em;
+    font-family: 'Open San', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    padding: 1em;
+    line-height: 1.8em;
+    margin-bottom: 1em;
     color: #ffffff;
 }
-.social-media > img {
+
+.social-media>a {
     padding: 1em;
     margin-left: 0.3em;
 }
+
 .right {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: auto 2em auto auto;
+    margin: 2em;
 }
+
 .logo-footer {
     width: 220px;
     align-items: center;
     justify-content: center;
     margin: auto;
 }
+
 .logo-footer-small {
     display: none;
 }
 
+.social-media {
+    width: 330px;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1em;
+    padding-bottom: .2em;
+    margin: 1em;
+    margin-bottom: 1em;
+}
+
+
 /* media-media-media-media-media-media */
 
 @media only screen and (max-width: 670px) {
-
     footer {
         display: flex;
         flex-direction: column;
-        min-width: 400px;
         background-color: #175384;
-        margin-top: 3em;
     }
     footer h3 {
-        font-family: ‘Alice’, serif;
+        font-family: 'Alice', serif;
         color: #DEA01E;
         font-size: 1.6em;
+        text-align: center;
     }
     footer p {
-        font-family: ‘Open Sans’, sans-serif;
+        font-family: 'Open Sans', sans-serif;
         color: #ffffff;
+        text-align: center;
+        line-height: 1.8em;
     }
     .social-media {
-        width: 310px;
+        width: 290px;
         align-items: center;
         justify-content: center;
+        padding-top: 1em;
+        padding-bottom: .2em;
         margin: auto;
+        margin-bottom: 1em;
+    }
+    .social-media a {
+        padding: .9em;
+        margin: auto;
+        align-items: center;
+        justify-content: center;
     }
     .left {
         align-items: center;
@@ -80,15 +110,8 @@ footer p {
         align-items: center;
         justify-content: center;
         margin: auto;
-    }
-    .logo-footer {
-        display: none;
-    }
-    .logo-footer-small {
-        display: block;
-        width: 220px;
-	    align-items: center;
+        align-items: center;
         justify-content: center;
-        margin: 1em auto auto auto;
+        margin: 1em auto 2em auto;
     }
 }

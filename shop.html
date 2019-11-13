@@ -5,17 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">  
     <style>
-        @import url(’https://fonts.googleapis.com/css?family=Open+Sans&display=swap’);
-        @import url(‘https://fonts.googleapis.com/css?family=Alice&display=swap’);
+        @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+        @import url('https://fonts.googleapis.com/css?family=Alice&display=swap');
     </style>
     <link rel="stylesheet" href="css/style-header.css">
     <link rel="stylesheet" href="css/style-shop.css">
     <link rel="stylesheet" href="css/style-footer.css">
-    <title>Icaros Space Sales -> Shop</title>
+    <title>Icaros Space Sales | Shop</title>
 </head>
 <body>
-    <header>
-        <a class="logo-link" href="index.html"><img class="logo" src="img/header/logo.svg" alt="logo"></a> 
+    <header id="to-top">
+        <div class="logo-bar"><a class="logo-link" href="index.html"><img class="logo" src="img/header/logo.svg" alt="logo"></a> </div>
         <nav>
             <a href="vision.html">OUR VISION</a>
             <a href="shop.html">SHOP</a>
@@ -23,7 +23,7 @@
             <a href="contact.html">CONTACT</a>
         </nav>
         <div class="label">
-            <span>Välj en sida</span>
+            <span>Menu</span>
             <div class="hamburger-icon"><img src="img/header/hamburger.svg" alt="-"></div>
         </div>
         <ul class="menu">
@@ -35,172 +35,285 @@
         </ul>
     </header>
     <div class="img-top">
-        <div class="shop-banner">
-            <h3>Veckans erbjudanden hos Icaros Spaces Sales</h3>
-            <p>Ta dig till nästa dimension</p>
-            <div class="button-shop"><span>Klicka här</span></div>
+        <div class="shop-box">
+            <div class="shop-banner">
+                <h2>Icaros Space Sales<br>Web Shop</h2><br><br>
+                <span>Ships anywhere in the galaxy!</span>
+            </div>
         </div>
     </div>
     <div class="shop-menu">
         <nav>
-            <a href=""><span>MOONS</span></a>
-            <a href=""><span>PLANETS</span></a>
-            <a href=""><span>SOLARSYSTEM</span></a>
-            <a href=""><span>GALAXYS</span></a>
+            <a class="menu-moons" id="menu-moons2" href="#product-moons-title"><span>MOONS</span></a>
+            <a class="menu-planets" href="#product-planet-title"><span>PLANETS</span></a>
+            <a class="menu-galaxys" href="#product-galaxie-title"><span>GALAXIES</span></a>
         </nav>
     </div>
-    <!-- <div class="shop"></div>
-    <div class="shop-title">Shop</div>
-    <div class="shop-border"></div> -->
+
     <div class="container">
-        <div class="product">
-            <div class="img-products">
-                <div class="img-product-1"></div>
-            </div>      
+
+<!-- PLANETS -->
+
+            <div id="product-planet-title">
+                <div class="moons-title">Planets</div>
+                <div class="moons-border"></div>
+            </div>
+
+        <div class="product-planet mercury">
+            <div class="img-product">
+                <div class="back-img">
+                    <div class="img-product-mercury"></div>
+                </div>           
+                </div>      
             <div class="product-info">
-                <h2>Epimetheus</h2><br><br><br>
-                <p>Epimetheus is a potato-shaped moon with a mean radius of 36 miles 
-                (58 km) and dimensions of 84 x 65 x 65 miles (135 x 108 x 105 km, respectively).</p><br>
-                <!-- <!-- <a href="https://solarsystem.nasa.gov/moons/saturn-moons/epimetheus/in-depth/">read more...</a> --> -->
-                <!-- <div class="price">
-                    <span class="money">$142.000.000</span>
-                </div> -->
-                <!-- <button>Add to cart</button> -->
-            </div>				
-        </div>
-        <div class="product">
-            <div class="img-products">
-                <div class="img-product-2"></div>
+                <h3>Mercury</h3><br>
+                <p>The smallest planet in our solar system and nearest to the Sun, Mercury is only slightly larger than Earth's Moon.</p><br>
+            </div>
+        </div>     
+        <div class="product-planet">
+            <div class="img-product">
+                <div class="img-product-venus"></div>
             </div>
             <div class="product-info">
-                <h2>Epimetheus</h2><br><br><br>
-                <p>Epimetheus is a potato-shaped moon with a mean radius of 36 miles 
-                (58 km) and dimensions of 84 x 65 x 65 miles (135 x 108 x 105 km, respectively).</p><br>
-                <!-- <a href="https://solarsystem.nasa.gov/moons/saturn-moons/epimetheus/in-depth/">read more...</a> -->
-                <!-- <div class="price">
-                    <span class="money">$142.000.000</span>
-                </div> -->
-                <!-- <button>Add to cart</button> -->
+                <h3>Venus</h3><br>
+                <p>Second planet from the Sun and our closest planetary neighbor, Venus is similar in structure and size to Earth, but it is now a very different world.</p><br>
             </div>				
         </div>
-        <div class="product">
-            <div class="img-products">
-                <div class="img-product-3"></div>
+        <div class="product-planet">
+            <div class="img-product">
+                <div class="img-product-earth"></div>
             </div>      
             <div class="product-info">
-                <h2>Epimetheus</h2><br><br><br>
-                <p>Epimetheus is a potato-shaped moon with a mean radius of 36 miles 
-                (58 km) and dimensions of 84 x 65 x 65 miles (135 x 108 x 105 km, respectively).</p><br>
-                <!-- <a href="https://solarsystem.nasa.gov/moons/saturn-moons/epimetheus/in-depth/">read more...</a> -->
-                <!-- <div class="price">
-                    <span class="money">$142.000.000</span>
-                </div> -->
-                <!-- <button>Add to cart</button> -->
+                <h3>Earth</h3><br>
+                <p>Our home planet is the third planet from the Sun, and the only place we know of so far that’s inhabited by living things.</p><br>
             </div>				
         </div>
-        <div class="product">
-            <div class="img-products">
-                <div class="img-product-5"></div>
+        <div class="product-planet">
+            <div class="img-product">
+                <div class="img-product-mars"></div>
             </div>
             <div class="product-info">
-                <h2>Epimetheus</h2><br><br><br>
-                <p>Epimetheus is a potato-shaped moon with a mean radius of 36 miles 
-                (58 km) and dimensions of 84 x 65 x 65 miles (135 x 108 x 105 km, respectively).</p><br>
-                <!-- <a href="https://solarsystem.nasa.gov/moons/saturn-moons/epimetheus/in-depth/">read more...</a> -->
-                <!-- <div class="price">
-                    <span class="money">$142.000.000</span>
-                </div> -->
-                <!-- <button>Add to cart</button> -->
+                <h3>Mars</h3><br>
+                <p>The fourth planet from the Sun, Mars is a dusty, cold, desert world with a very thin atmosphere.</p><br>
             </div>				
         </div>
-        <div class="product">
-            <div class="img-products">
-                <div class="img-product-6"></div>
+        <div class="product-planet">
+            <div class="img-product">
+                <div class="img-product-jupiter"></div>
             </div>      
             <div class="product-info">
-                <h2>Epimetheus</h2><br><br><br>
-                <p>Epimetheus is a potato-shaped moon with a mean radius of 36 miles 
-                (58 km) and dimensions of 84 x 65 x 65 miles (135 x 108 x 105 km, respectively).</p><br>
-                <!-- <a href="https://solarsystem.nasa.gov/moons/saturn-moons/epimetheus/in-depth/">read more...</a> -->
-                <!-- <div class="price">
-                    <span class="money">$142.000.000</span>
-                </div> -->
-                <!-- <button>Add to cart</button> -->
+                <h3>Jupiter</h3><br>
+                <p>Jupiter has a long history surprising scientists—all the way back to 1610 when Galileo Galilei found the first moons beyond Earth. That discovery changed the way we see the universe.</p><br>
             </div>				
         </div>
-        <div class="product">
-            <div class="img-products">
-                <div class="img-product-7"></div>
+        <div class="product-planet">
+            <div class="img-product">
+                <div class="img-product-saturn"></div>
             </div>      
             <div class="product-info">
-                <h2>Epimetheus</h2><br><br><br>
-                <p>Epimetheus is a potato-shaped moon with a mean radius of 36 miles 
-                (58 km) and dimensions of 84 x 65 x 65 miles (135 x 108 x 105 km, respectively).</p><br>
-                <!-- <a href="https://solarsystem.nasa.gov/moons/saturn-moons/epimetheus/in-depth/">read more...</a> -->
-                <!-- <div class="price">
-                    <span class="money">$142.000.000</span>
-                </div> -->
-                <!-- <button>Add to cart</button> -->
+                <h3>Saturn</h3><br>
+                <p>Saturn is the sixth planet from the Sun and the second largest planet in our solar system.</p><br>
             </div>				
         </div>
-        <div class="product">
-            <div class="img-products">
-                <div class="img-product-8"></div>
+        <div class="product-planet">
+            <div class="img-product">
+                <div class="img-product-uranus"></div>
             </div>      
             <div class="product-info">
-                <h2>Epimetheus</h2><br><br><br>
-                <p>Epimetheus is a potato-shaped moon with a mean radius of 36 miles 
-                (58 km) and dimensions of 84 x 65 x 65 miles (135 x 108 x 105 km, respectively).</p><br>
-                <!-- <a href="https://solarsystem.nasa.gov/moons/saturn-moons/epimetheus/in-depth/">read more...</a> -->
-                <!-- <div class="price">
-                    <span class="money">$142.000.000</span>
-                </div> -->
-                <!-- <button>Add to cart</button> -->
+                <h3>Uranus</h3><br>
+                <p>The first planet found with the aid of a telescope, Uranus was discovered in 1781 by astronomer William Herschel, although he originally thought it was either a comet or a star.</p><br>
             </div>				
         </div>
-        <div class="product">
-            <div class="img-products">
-                <div class="img-product-9"></div>
+        <div class="product-planet">
+            <div class="img-product">
+                <div class="img-product-neptune"></div>
             </div>      
             <div class="product-info">
-                <h2>Epimetheus</h2><br><br><br>
-                <p>Epimetheus is a potato-shaped moon with a mean radius of 36 miles 
-                (58 km) and dimensions of 84 x 65 x 65 miles (135 x 108 x 105 km, respectively).</p><br>
-                <!-- <a href="https://solarsystem.nasa.gov/moons/saturn-moons/epimetheus/in-depth/">read more...</a> -->
-                <!-- <div class="price">
-                    <span class="money">$142.000.000</span>
-                </div> -->
-                <!-- <button>Add to cart</button> -->
+                <h3>Neptune</h3><br>
+                <p>Dark, cold and whipped by supersonic winds, ice giant Neptune is the eighth and most distant planet in our solar system.</p><br>
             </div>				
         </div>
-        <div class="product">
-            <div class="img-products">
-                <div class="img-product-10"></div>
+
+<!-- MOONS -->
+
+<div id="product-moons-title">
+    <div class="moons-title">Moons</div>
+    <div class="moons-border"></div>
+</div>
+
+<!-- MARS -->
+
+        <div class="product-moons">
+            <div class="img-product">
+                <div class="img-product-moons-deimos"></div>
             </div>      
             <div class="product-info">
-                <h2>Epimetheus</h2><br><br><br>
-                <p>Epimetheus is a potato-shaped moon with a mean radius of 36 miles 
-                (58 km) and dimensions of 84 x 65 x 65 miles (135 x 108 x 105 km, respectively).</p><br>
-                <!-- <a href="https://solarsystem.nasa.gov/moons/saturn-moons/epimetheus/in-depth/">read more...</a> -->
-                <!-- <div class="price">
-                    <span class="money">$142.000.000</span>
-                </div> -->
-                <!-- <button>Add to cart</button> -->
+                <h3>Deimos</h3><br>
+                <p>Deimos is the smaller of Mars' two moons. Being only 9 by 7 by 6.8 miles in size (15 by 12 by 11 kilometers), Deimos whirls around Mars every 30 hours.</p><br>
             </div>				
         </div>
+
+        <!-- JUPITER -->
+
+        <div class="product-moons">
+            <div class="img-product">
+                <div class="img-product-moons-io"></div>
+            </div>      
+            <div class="product-info">
+                <h3>Io</h3><br>
+                <p>Jupiter's moon Io is the most volcanically active world in the Solar System, with hundreds of volcanoes, some erupting lava fountains dozens of miles (or kilometers) high.</p><br>
+            </div>				
+        </div>
+        <div class="product-moons">
+            <div class="img-product">
+                <div class="img-product-moons-ganymede"></div>
+            </div>      
+            <div class="product-info">
+                <h3>Ganymede</h3><br>
+                <p>Ganymede is named for a boy who was made cupbearer for the ancient Greek gods by Zeus – Jupiter to the Romans.</p><br>
+            </div>				
+        </div>
+
+<!-- SATURN -->
+
+        <div class="product-moons">
+            <div class="img-product">
+                <div class="img-product-moons-enceladus"></div>
+            </div>      
+            <div class="product-info">
+                <h3>Enceladus</h3><br>
+                <p>Few worlds in our solar system are as compelling as Saturn’s icy ocean moon Enceladus.</p><br>
+            </div>				
+        </div>
+        <div class="product-moons">
+            <div class="img-product">
+                <div class="img-product-moons-titan"></div>
+            </div>      
+            <div class="product-info">
+                <h3>Titan</h3><br>
+                <p>Saturn’s largest moon Titan is an extraordinary and exceptional world.</p><br>
+            </div>				
+        </div>
+
+<!-- URANUS -->
+
+        <div class="product-moons">
+            <div class="img-product">
+                <div class="img-product-moons-ariel"></div>
+            </div>      
+            <div class="product-info">
+                <h3>Ariel</h3><br>
+                <p>All of Uranus' larger moons, including Ariel, are thought to consist mostly of roughly equal amounts of water ice and silicate rock.</p><br>
+            </div>				
+        </div>
+        <div class="product-moons">
+            <div class="img-product">
+                <div class="img-product-moons-oberon"></div>
+            </div>      
+            <div class="product-info">
+                <h3>Oberon</h3><br>
+                <p>Oberon is the second largest moon of Uranus. Discovered in 1787, little was known about this moon until Voyager 2 passed it during its flyby of Uranus in January 1986.</p><br>
+            </div>				
+        </div>
+        <div class="product-moons">
+            <div class="img-product">
+                <div class="img-product-moons-titania"></div>
+            </div>      
+            <div class="product-info">
+                <h3>Titania</h3><br>
+                <p>Titania is Uranus' largest moon. Images taken by Voyager 2 almost 200 years after Titania's discovery revealed signs that the moon was geologically active.</p><br>
+            </div>				
+        </div>
+
+<!-- NEPTUNE -->
+
+        <div class="product-moons">
+            <div class="img-product">
+                <div class="img-product-moons-triton"></div>
+            </div>      
+            <div class="product-info">
+                <h3>Triton</h3><br>
+                <p>Triton is the largest of Neptune's 13 moons. It is unusual because it is the only large moon in our solar system that orbits in the opposite direction of its planet's rotation.</p><br>
+            </div>				
+        </div>
+
+<!-- GALAXIES -->
+
+        <div id="product-galaxie-title">
+            <div class="moons-title">Galaxies</div>
+            <div class="moons-border"></div>
+        </div>
+
+        <div class="product-galaxy">
+            <div class="img-product">
+                <div class="img-product-galaxies-antennae"><!-- <img src="img/shop/galaxies/antennae.svg" alt=""> --></div>
+            </div>      
+            <div class="product-info">
+                <h3>Antennae</h3><br>
+                <p>In a constellation in the Southern Hemisphere is a phenomenon that began between 200 and 300 million years ago.</p><br>
+            </div>				
+        </div>
+        <div class="product-galaxy">
+            <div class="img-product">
+                <div class="img-product-galaxies-cannibal"><!-- <img src="img/shop/galaxies/cannibal.svg" alt=""> --></div>
+            </div>      
+            <div class="product-info">
+                <h3>Cannibal</h3><br>
+                <p>Around the Milky Way galaxy and in the vicinity of our immediate cosmic neighborhood, known as the "Local Group" of galaxies, traces of spiral galaxies swallowing dwarf galaxies have been known since 1997.</p><br>
+            </div>							
+        </div>
+        <div class="product-galaxy">
+            <div class="img-product">
+                <div class="img-product-galaxies-cosmos-aztec-1"><!-- <img src="img/shop/galaxies/cosmos-aztec-1.svg" alt=""> --></div>
+            </div>      
+            <div class="product-info">
+                <h3>Cosmos AzTEC-1</h3><br>
+                <p>AzTEC-1 – located 12.4 billion light-years away, in the early universe – is now known to be forming stars 1,000 times faster than our Milky Way.</p><br>
+            </div>							
+        </div>
+        <div class="product-galaxy">
+                <div class="img-product">
+                    <div class="img-product-galaxies-sombrero"><!-- <img src="img/shop/galaxies/sombrero.svg" alt=""> --></div>
+                </div>      
+                <div class="product-info">
+                    <h3>Sombrero</h3><br>
+                    <p>Pierre Méchain (1744-1804) first described the Sombrero Galaxy in 1781, but it was not formally added to the Messier Catalogue until 140 years later in 1921.</p><br>
+                </div>				
+            </div>
+            <div class="product-galaxy">
+                <div class="img-product">
+                    <div class="img-product-galaxies-triangulum"><!-- <img src="img/shop/galaxies/triangulum.svg" alt=""> --></div>
+                </div>      
+                <div class="product-info">
+                    <h3>Triangulum</h3><br>
+                    <p>Located in a constellation that looks like a triangle, the Triangulum Galaxy is the third-largest galaxy in our Local Group.</p><br>
+                </div>							
+            </div>
+            <div class="product-galaxy">
+                <div class="img-product">
+                    <div class="img-product-galaxies-whirlpool"><!-- <img src="img/shop/galaxies/whirlpool.svg" alt=""> --></div>
+                </div>      
+                <div class="product-info">
+                    <h3>Whirlpool</h3><br>
+                    <p>Most people who might imagine the classic shape and structure of a galaxy will probably instantly start thinking of the Whirlpool Galaxy, a spiral galaxy that happens to exist relatively close to our own galaxy, the Milky Way.</p><br>
+                </div>							
+            </div>
     </div>
-    <!-- <a class="show-more-products" href=""><span>visa flera produkter >></span></a> -->
+    <div class="rocket">      
+        <a href="#to-top"><img src="img/shop/rocket.svg" alt=""></a>
+        <div class="fire"><img src="img/shop/fire.svg" alt=""></div>
+    </div>  
     <footer>
         <div class="left">
             <h3>Icaros Spaces Sales</h3>
-            <p>Besöksadress: Joel Alme Torg 89 / Adress: Box 1982, 422 04 Glenns Backa<br>Telefon: 031 323 19 89<br>Telefontider: mån-fre 08.00-16.30<br>E-post: icaros.spaces.sales@goteborg.se</p>
+            <p>Address: Joel Alme Torg 89 / Business Address: Box 1982, 422 04 Glenns Backa<br>Phone Number: 031 323 19 89<br>Phone hours: Mon-Fri 08.00-16.30<br>Email: icaros.spaces.sales@goteborg.se</p>
             <div class="social-media">
-                <img src="img/footer/facebook.svg" alt="">
-                <img src="img/footer/instagram.svg" alt="">
-                <img src="img/footer/twitter.svg" alt="">
-                <img src="img/footer/youTube.svg" alt="">
+                <a href=""><img src="img/footer/facebook.svg" alt=""></a>
+                <a href=""><img src="img/footer/instagram.svg" alt=""></a>
+                <a href=""><img src="img/footer/twitter.svg" alt=""></a>
+                <a href=""><img src="img/footer/youTube.svg" alt=""></a>
             </div>
-        </div>       
+        </div> 
         <div class="right">
             <img class="logo-footer" src="img/footer/logo-footer.svg" alt="">
             <img class="logo-footer-small" src="img/footer/logo-footer-small.svg" alt="">
@@ -208,4 +321,3 @@
     </footer>
 </body>
 </html>
->>>>>>> develop
