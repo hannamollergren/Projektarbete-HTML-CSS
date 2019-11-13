@@ -956,6 +956,7 @@ html {
 		font-style: normal;
 		font-weight: normal;
 		font-size: 1em;
+		margin:auto;
 		margin-top: 1.2em;
 	} 
 	.shop-menu > nav > a {
@@ -1125,27 +1126,29 @@ html {
 			font-weight: normal;
 			font-size: 1em;
 			margin-top: 1.2em;
+			margin: auto;
+			width: 100%;
 		} 
 		.shop-menu > nav > a {
 			font-family: Alice;
 			font-style: normal;
 			font-weight: normal;
-			min-width: 200px;
+			/* min-width: 200px; */
 			align-self: stretch;
 			font-size: 0.9em;
 			text-decoration: none;
 			color: #3F70A4;
 			border: 1px solid #3F70A4;
 			border-radius: 4px;
-			padding: 0.5em 1em 0.5em 1em;
-			margin: 0.5em 0.5em 0.5em 0;
+/* 			padding: 0.5em 1em 0.5em 1em;
+			margin: 0.5em 0.5em 0.5em 0; */
 			font-family: Alice;
 		} 
 		.shop-menu > nav {
 			font-family: Alice;
 			font-style: normal;
 			font-weight: normal;
-			margin: 0.5em 11em 0.5em 11em;
+			margin: auto;
 			display: grid;
 			padding: 1em 1em 1em 1em;
 			grid-template-columns: 1fr;
