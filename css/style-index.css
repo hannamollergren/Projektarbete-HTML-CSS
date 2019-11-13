@@ -55,6 +55,7 @@ h2 {
 	padding: 2em;
 }
 
+
 /* Bakgrund till boxinside, blir transparent vid skalning */
 .box-inside-backg1 {
 	background: rgba(73, 110, 145, 0.4)
