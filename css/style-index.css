@@ -366,6 +366,11 @@ span.price-text {
 	font-family: Alice;
  }
 
+ span.price-text { 
+	color:rgb(43, 110, 187);
+	font-family: Alice;
+ }
+
 /* Mellanrum mellan rubrik och text i kolumner */
 .column h2 {
 	margin-bottom: 0.1em;
