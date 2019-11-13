@@ -52,6 +52,11 @@ nav a:hover {
     transition: all 0.3s ease 0s;
 }
 
+nav a:hover {
+    color: #DEA01E;
+    transition: all 0.3s ease 0s;
+}
+
 .label {
     display: none;
 }

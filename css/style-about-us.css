@@ -31,8 +31,26 @@ h6 {
     font-family: 'Alice', serif;
 }
 
-p,
-a {
+
+/*
+.box-1,
+.box-4,
+.box-5,
+.box-8 {
+    padding-top: 2em;
+}
+*/
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0em;
+    margin-left: 2em;
+    margin-right: 2em;
+    line-height: 1.8em;
+    padding: 1em 1em;
+}
+
+.a-alt a {
     font-family: 'Open Sans', sans-serif;
     margin: 0em;
     margin-left: 2em;
