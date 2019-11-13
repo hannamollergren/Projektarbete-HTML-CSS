@@ -13,14 +13,16 @@ p {
 	color: #3E4756;;
 	font-style: normal;
 	font-weight: normal;
+	line-height: 1.5em;
+	
 }
 
 h2 {
 	font-family: 'Alice';
+	font-size: 1.6em;
 	color:#3E4756;
 	font-style: normal;
 	font-weight: normal;
-	
 }
 
 /* Text-color on box-with-backg*/
@@ -52,6 +54,7 @@ h2 {
 	justify-content: center;
 	padding: 2em;
 }
+
 
 /* Bakgrund till boxinside, blir transparent vid skalning */
 .box-inside-backg1 {
@@ -97,6 +100,8 @@ h2 {
 	font-family: 'Open Sans';
 	text-decoration: none;
 }
+
+
 
 /*-----------------------------------------------------------------------------*/
 /* Stor bild top innehåll avslut-----------------------------------------------*/
@@ -363,16 +368,17 @@ h2 {
 
 span.price-text { 
 	color:rgb(43, 110, 187);
-	font-family: Alice;
+	font-family: 'Alice';
  }
 
  span.price-text { 
 	color:rgb(43, 110, 187);
-	font-family: Alice;
+	font-family: 'Alice';
  }
 
 /* Mellanrum mellan rubrik och text i kolumner */
 .column h2 {
+	margin-top: 0.5em;
 	margin-bottom: 0.1em;
 }
 
@@ -386,7 +392,7 @@ span.price-text {
 a.column-links {	
 	color: #3F70A4;
 	text-decoration: none;
-	font-family: Alice;
+	font-family: 'Alice';
 }
 /* Skalning på bilder i kolumnerna */
 .pic-scale-column {
@@ -411,8 +417,8 @@ a.column-links {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 2em;
-    color: #ffeead;
+	color: #ffeead;
+	cursor: pointer;
 }
 
 .container-small-celestial > div > img {
