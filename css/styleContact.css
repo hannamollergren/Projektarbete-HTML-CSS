@@ -216,6 +216,6 @@ h1, h2, h3, h4, h5, h6{
 /*Media*/
 @media only screen and (max-width: 600px){
 .container-form{
-    margin: 2em 2em 2em 2em;
+    margin: 2em 2em 3em 2em;
   }
 }

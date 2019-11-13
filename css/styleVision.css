@@ -38,6 +38,8 @@ z-index: 1;
 p{
     font-family: 'Open Sans', sans-serif;
     line-height: 1.8em;
+    font-style: normal;
+    font-weight: normal;
 
 }
 h1, h2, h3, h4, h5, h6{
@@ -89,6 +91,8 @@ h1{
     line-height: 1.4em;
     margin: 0 2em 2em 2em;
     text-align: center;
+    font-style: normal;
+    font-weight: normal;
 }
 .grid-header-text1 a > p{
     position: relative;  
@@ -164,6 +168,8 @@ h1{
 }
 .vision-container p{
     margin: 0 2em 1em 2em;
+    font-style: normal;
+    font-weight: normal;
 }
 .vision-container img{
     position: relative;
