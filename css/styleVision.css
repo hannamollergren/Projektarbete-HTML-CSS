@@ -56,7 +56,7 @@ h1{
   }
   .big-image1 {
     grid-area: image;  
-    min-height: 400px;
+    min-height: 50vh;
     background: url(../img/imageVision/imagevision.jpg);
     background-size: cover;
     background-position: center;
@@ -68,7 +68,6 @@ h1{
   }
   .box-inside {
     flex-basis: 100px;
-    padding: 2em; 
     color: white;
     max-width: 500px;
     display: flex;
@@ -88,7 +87,7 @@ h1{
 }
 .sub-text p{
     line-height: 1.4em;
-    margin: 0 0 2em 0;
+    margin: 0 2em 2em 2em;
     text-align: center;
 }
 .grid-header-text1 a > p{
@@ -102,7 +101,7 @@ h1{
     display: inline-block;
     text-decoration: none;
     padding: 6px 28px;
-    margin-bottom: 1em;
+    margin-bottom: 2em;
 } 
 .grid-header-text1 a > p:hover{
     background-color: rgb(233, 167, 81);
