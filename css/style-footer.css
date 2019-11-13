@@ -8,7 +8,6 @@ footer {
    grid-template-columns: 2fr 1fr;
    background-color: #175384;
    padding: 2.2em;
-   /* margin-top: 3em; */
 }
 footer h3 {
    font-family: 'Alice', serif;

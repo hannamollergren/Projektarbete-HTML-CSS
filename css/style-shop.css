@@ -6,13 +6,53 @@
 html {
 	scroll-behavior: smooth;
 }
-.shop-menu {
-	font-family: 'Alice', serif;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 1em;
-	margin-top: 1.2em;
-}
+		.shop-menu {
+			font-family: 'Alice', serif;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 1em;
+			margin-top: 1.2em;
+		} 
+		.shop-menu > nav > a {
+			font-family: Alice;
+			font-style: normal;
+			font-weight: normal;
+			width: auto;
+			align-self: stretch;
+			font-size: 0.9em;
+			text-decoration: none;
+			color: #3F70A4;
+			border: 1px solid #3F70A4;
+			border-radius: 4px;
+			padding: 0.5em 1em 0.5em 1em;
+			margin: 0.5em 0.5em 0.5em 0;
+			font-family: Alice;
+		} 
+		.shop-menu > nav {
+			font-family: Alice;
+			font-style: normal;
+			font-weight: normal;
+			margin: 0.5em 11em 0.5em 11em;
+			display: grid;
+			padding: 1em 1em 1em 1em; 
+			grid-template-columns: 1fr 1fr 1fr;
+			font-family: Alice;
+		}
+		.shop-menu > nav > a:hover {
+			font-family: Alice;
+			font-style: normal;
+			font-weight: normal;
+			background-color: #E3E6EB;
+			transition: all 0.5s ease 0s;
+		}
+		.shop-menu > nav > a > span {
+			font-family: Alice;
+			font-style: normal;
+			font-weight: normal;
+			padding-left: 0.5em;
+			padding-right: 0.5em;
+			margin: auto;
+		}  
 .rocket {
 	background: transparent;
 	cursor: pointer;
@@ -28,6 +68,9 @@ html {
 }
 .rocket:hover {
 	animation: bounce 0.4s infinite;
+	transition-property: all;
+	transition-duration: 0.9s;
+	transition-timing-function: ease-in-out;
 }
 .fire {
 	display: none;
@@ -40,15 +83,10 @@ html {
 	width: 40px;
 	height: 40px;
 	z-index: 200;
-	transition: transform .8s ease;
 }
 .rocket:hover .fire{
 	display: block;
-
 }
-.rocket:hover {
-	animation: bounce 0.4s infinite;
- }
  @keyframes bounce {
 	0% {
 	  transform: translate3d(0px, 0px, 0);
@@ -59,7 +97,7 @@ html {
 	100% {
 	  transform: translate3d(0px, 0px, 0);
 	}
- }
+}
 .img-top {
 	display: flex;
 	height: 50vh;
@@ -144,13 +182,27 @@ html {
 	left: 0;
 	right: 0;
 }
+#product-moons-title {
+	grid-column: span 3;
+	margin-top: 1em;
+	margin-bottom: 2em;
+}
+#product-planet-title {
+	grid-column: span 3;
+	margin-top: 1em;
+	margin-bottom: 2em;
+}
+#product-galaxie-title {
+	grid-column: span 3;
+	margin-top: 1em;
+	margin-bottom: 2em;
+}
 .moons-title {
+	position: relative;
 	font-family: 'Alice', serif;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 1em;
-	display: none;
-	position: relative;
 	color: #3E4756;
 	font-size: 1.6em;
 	width: 100px;
@@ -162,10 +214,10 @@ html {
 	right: 0;
 }
 .moons-border {
-	display:none;
 	position: absolute;
 	border: 1px solid #175384;
 	width: 35px;
+	margin: auto;
 	margin-left: auto;
 	margin-right: auto;
 	left: 0;
@@ -178,7 +230,7 @@ html {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-gap: 0.2em;
-	margin: 2.5em 3em 2.5em 3em;
+	margin: 0 3em 3em 3em;
 }
 .container .product-info {
 	display: flex;
@@ -198,7 +250,11 @@ html {
 	color: #E3E6EB;
 }
 
-/* -------------------------------------------------------- PLANETS BILDER ---*/
+/* ------------------------------- PLANETS BILDER ---*/
+
+/* .mercury {
+	grid-column: span 2;
+} */
 
 .img-product-mercury {
 	height: 40vh;
@@ -369,6 +425,58 @@ html {
 	margin: 1em;
 }
 
+/*--- GALAXIES ---*/
+
+.img-product .img-product-galaxies-antennae {
+	height: 350px;
+	overflow: hidden;
+	transition: transform .8s ease; 
+	background: url(../img/shop/galaxies/antennae.svg) center center;
+	background-size: cover;
+}
+.img-product .img-product-galaxies-antennae {
+	height: 350px;
+	overflow: hidden;
+	transition: transform .8s ease; 
+	background: url(../img/shop/galaxies/antennae.svg) center center;
+	background-size: cover;
+}
+.img-product .img-product-galaxies-cannibal {
+	height: 350px;
+	overflow: hidden;
+	transition: transform .8s ease; 
+	background: url(../img/shop/galaxies/cannibal.svg) center center;
+	background-size: cover;
+}
+.img-product .img-product-galaxies-cosmos-aztec-1 {
+	height: 350px;
+	overflow: hidden;
+	transition: transform .8s ease; 
+	background: url(../img/shop/galaxies/cosmos-aztec-1.svg) center center;
+	background-size: cover;
+}
+.img-product .img-product-galaxies-sombrero {
+	height: 350px;
+	overflow: hidden;
+	transition: transform .8s ease; 
+	background: url(../img/shop/galaxies/sombrero.svg) center center;
+	background-size: cover;
+}
+.img-product .img-product-galaxies-triangulum {
+	height: 350px;
+	overflow: hidden;
+	transition: transform .8s ease; 
+	background: url(../img/shop/galaxies/triangulum.svg) center center;
+	background-size: cover;
+}
+.img-product .img-product-galaxies-whirlpool {
+	height: 350px;
+	overflow: hidden;
+	transition: transform .8s ease; 
+	background: url(../img/shop/galaxies/whirlpool.svg) center center;
+	background-size: cover;
+}
+
 /*--------------------------------------------------*/
 
 .product-planet {
@@ -387,6 +495,17 @@ html {
 	background-repeat: no-repeat;
 	background-size: cover;
 }
+.product-galaxy {
+	height: 290px;
+	overflow: hidden;
+	transition: transform .8s ease; 
+	background-color: black;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.product-galaxy .img-product{
+	transform: scale(1.2);
+}
 .product-planet:hover {
 	overflow: hidden;
 	transition: transform .1s ease; 
@@ -403,8 +522,15 @@ html {
 	background-repeat: no-repeat;
 	background-size: cover;
 }
+.product-galaxy:hover {
+	overflow: hidden;
+	transition: transform .1s ease; 
+	transform: scale(.97);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
 .img-product {
-	transition: transform .6s ease;
+	transition: transform .8s ease;
 }
 .product-planet:hover .img-product {
 	transform: scale(0.70) translate(20%, -25%);
@@ -418,16 +544,27 @@ html {
 .product-moons .product-info {
 	transition: transform .8s ease; 
 }
+.product-galaxy .product-info {
+	transition-property: all;
+	transition-duration: 0.6s;
+	transition-timing-function: ease-in; 
+}
 .product-planet:hover .product-info > p {
 	transition: transform .8s ease; 
 }
 .product-moons:hover .product-info > p {
 	transition: transform .8s ease; 
 }
+.product-galaxy:hover .product-info > p {
+	transition: transform .8s ease; 
+}
 .product-planet:hover .product-info > h3 {
 	transition: transform .8s ease; 
 }
 .product-moons:hover .product-info > h3 {
+	transition: transform .8s ease; 
+}
+.product-galaxy:hover .product-info > h3 {
 	transition: transform .8s ease; 
 }
 .product-planet:hover .product-info > h3 {
@@ -438,23 +575,100 @@ html {
 	transform: scale(1.2); 
 	transform: translate(0px, -200px);
 }
+.product-galaxy:hover .product-info > h3 {
+	transform: scale(1); 
+	transform: translate(0px, -350px);
+}
 .product-planet:hover .product-info > p {
 	transform: scale(1.2); 
 	transform: translate(0px, -265px);
 	padding: 2em;
-} 
+}
 .product-moons:hover .product-info > p {
 	transform: scale(1.2); 
 	transform: translate(0px, -265px);
 	padding: 2em;
 } 
+.product-galaxy:hover .product-info > p {
+	transform: scale(1); 
+	transform: translate(0px, -400px);
+	padding: 2em;
+} 
+.product-galaxy:hover .img-product {
+	transform: scale(1);
+	opacity: 40%; 
+	transition-property: all;
+	transition-duration: 0.6s;
+	transition-timing-function: ease-in;
+}
 
-/* media-media-media-media-media-media */
+/* media-1-media-1-media-1-media-1-media-1 */
 
 @media only screen and (max-width: 1150px) {
 	.container {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
+	}
+	.shop-menu {
+		font-family: 'Alice', serif;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 1em;
+		margin-top: 1.2em;
+	} 
+	.shop-menu > nav > a {
+		font-family: Alice;
+		font-style: normal;
+		font-weight: normal;
+		min-width: 50px;
+		align-self: stretch;
+		font-size: 0.9em;
+		text-decoration: none;
+		color: #3F70A4;
+		border: 1px solid #3F70A4;
+		border-radius: 4px;
+		padding: 0.5em 1em 0.5em 1em;
+		margin: 0.5em 0.5em 0.5em 0;
+		font-family: Alice;
+	} 
+	.shop-menu > nav {
+		font-family: Alice;
+		font-style: normal;
+		font-weight: normal;
+		margin: 0.5em 11em 0.5em 11em;
+		display: grid;
+		padding: 1em 1em 1em 1em; 
+		grid-template-columns: 1fr 1fr 1fr;
+		font-family: Alice;
+	}
+	.shop-menu > nav > a:hover {
+		font-family: Alice;
+		font-style: normal;
+		font-weight: normal;
+		background-color: #E3E6EB;
+		transition: all 0.5s ease 0s;
+	}
+	.shop-menu > nav > a > span {
+		font-family: Alice;
+		font-style: normal;
+		font-weight: normal;
+		padding-left: 0.5em;
+		padding-right: 0.5em;
+		margin: auto;
+	}
+	#product-moons-title {
+		grid-column: span 2;
+		margin-top: 1em;
+		margin-bottom: 2em;
+	}
+	#product-planet-title {
+		grid-column: span 2;
+		margin-bottom: 2em;
+	}
+	#product-galaxie-title {
+		grid-column: span 2;
+		margin-top: 1em;
+		margin-bottom: 2em;
 	}
 	.product-planet, .product-moons {
 		height: 350px;
@@ -467,9 +681,6 @@ html {
 		transform: scale(.9);
 		transition: transform .6s ease;
 	}
-
-	/* PLANETS MEDIA MEDIA MEDIA 1 */
-
 	.img-product-mercury {
 		height: 52vh;
 		background: url(../img/shop/planets/mercury.svg);
@@ -541,6 +752,81 @@ html {
 		margin: 1em;
 	}
 
+/* MOONS MOONS MOONS MOONS MOONS */
+
+	.img-product-moons-deimos {
+		height: 52vh;
+		background-size: 50%; 
+		background-position: center; 
+		background-repeat:no-repeat;
+		margin: 1em;
+	}
+	.img-product-moons-io {
+		height: 52vh;
+		background-size: 50%; 
+		background-position: center;
+		background-repeat:no-repeat; 
+		margin-bottom: 1.0em;
+		margin: 1em;
+	}
+	.img-product-moons-ganymede {
+		height: 52vh;
+		background-size: 50%; 
+		background-position: center; 
+		background-repeat:no-repeat;
+		margin-bottom: 1.0em;
+		margin: 1em;
+	}
+	.img-product-moons-enceladus {
+		height: 52vh;
+		background-size: 50%; 
+		background-position: center; 
+		background-repeat:no-repeat;
+		margin-bottom: 1.0em;
+		margin: 1em;
+	}
+	.img-product-moons-titan {
+		height: 52vh;
+		background-size: 50%; 
+		background-position: center; 
+		background-repeat:no-repeat;
+		margin-bottom: 1.0em;
+		margin: 1em;
+	}
+	.img-product-moons-ariel {
+		height: 52vh;
+		background-size: 50%; 
+		background-position: center; 
+		background-repeat:no-repeat;
+		margin: 1em 1em 4em 1em;
+	}
+	.img-product-moons-oberon {
+		height: 52vh;
+		background-size: 50%; 
+		background-position: center; 
+		background-repeat:no-repeat;
+		margin-bottom: 1.0em;
+		margin: 1em;
+	}
+	.img-product-moons-titania {
+		height: 52vh;
+		background-size: 50%; 
+		background-position: center; 
+		background-repeat:no-repeat;
+		margin-bottom: 1.0em;
+		margin: 1em;
+	}
+	.img-product-moons-triton {
+		height: 52vh;
+		background-size: 50%; 
+		background-position: center; 
+		background-repeat:no-repeat;
+		margin-bottom: 1.0em;
+		margin: 1em;
+	}
+
+	/* GALAXIES GALAXIES GALAXIES GALAXIES */
+
 	.product-planet:hover .img-product {
 		transform: scale(0.60) translate(20%, -25%);
 	}
@@ -560,6 +846,28 @@ html {
 	.product-planet:hover .product-info > p {
 		transform: scale(1.2); 
 		transform: translate(0px, -285px);
+		padding: 2em;
+	} 
+	/* MOONS */
+	.product-moons:hover .img-product {
+		transform: scale(0.60) translate(20%, -25%);
+	}
+	.product-moons .product-info {
+		transition: transform .8s ease; 
+	}
+	.product-moons:hover .product-info > p {
+		transition: transform .8s ease; 
+	}
+	.product-moons:hover .product-info > h3 {
+		transition: transform .8s ease; 
+	}
+	.product-moons:hover .product-info > h3 {
+		transform: scale(1.2); 
+		transform: translate(0px, -260px);
+	}
+	.product-moons:hover .product-info > p {
+		transform: scale(1.2); 
+		transform: translate(0px, -320px);
 		padding: 2em;
 	} 
 
@@ -586,35 +894,35 @@ html {
 	/* -----------second menu----------- */
 
 	.shop-menu {
-		font-family: Alice;
+		font-family: 'Alice', serif;
 		font-style: normal;
 		font-weight: normal;
 		font-size: 1em;
-		margin-top: 0.2em
-	}
-	.shop-menu > nav {
-		font-family: Alice;
-		font-style: normal;
-		font-weight: normal;
-		margin: 0 6em 0 6em;
-		display: grid;
-		padding: 1em 1em 1em 1em;
-		grid-template-columns: 1fr 1fr;
-		font-family: Alice;
-	}
+		margin-top: 1.2em;
+	} 
 	.shop-menu > nav > a {
 		font-family: Alice;
 		font-style: normal;
 		font-weight: normal;
-		min-width: 150px;
+		min-width: 50px;
 		align-self: stretch;
 		font-size: 0.9em;
 		text-decoration: none;
 		color: #3F70A4;
 		border: 1px solid #3F70A4;
-		border-radius: 7px;
-		padding: 0.5em 0.5em 0.5em 0.5em;
-		margin: 0.5em;
+		border-radius: 4px;
+		padding: 0.5em 1em 0.5em 1em;
+		margin: 0.5em 0.5em 0.5em 0;
+		font-family: Alice;
+	} 
+	.shop-menu > nav {
+		font-family: Alice;
+		font-style: normal;
+		font-weight: normal;
+		margin: 0.5em 11em 0.5em 11em;
+		display: grid;
+		padding: 1em 1em 1em 1em; 
+		grid-template-columns: 1fr 1fr 1fr;
 		font-family: Alice;
 	}
 	.shop-menu > nav > a:hover {
@@ -628,8 +936,8 @@ html {
 		font-family: Alice;
 		font-style: normal;
 		font-weight: normal;
-		padding-left: 1em;
-		padding-right: 1em;
+		padding-left: 0.5em;
+		padding-right: 0.5em;
 		margin: auto;
 	}
 
@@ -640,6 +948,68 @@ html {
 	.container {
 		display: grid;
 		grid-template-columns: 1fr;
+	}
+	.shop-menu {
+		font-family: 'Alice', serif;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 1em;
+		margin-top: 1.2em;
+	} 
+	.shop-menu > nav > a {
+		font-family: Alice;
+		font-style: normal;
+		font-weight: normal;
+		min-width: 200px;
+		align-self: stretch;
+		font-size: 0.9em;
+		text-decoration: none;
+		color: #3F70A4;
+		border: 1px solid #3F70A4;
+		border-radius: 4px;
+		padding: 0.5em 1em 0.5em 1em;
+		margin: 0.5em 0.5em 0.5em 0;
+		font-family: Alice;
+	} 
+	.shop-menu > nav {
+		font-family: Alice;
+		font-style: normal;
+		font-weight: normal;
+		margin: 0.5em 11em 0.5em 11em;
+		display: grid;
+		padding: 1em 1em 1em 1em; 
+		grid-template-columns: 1fr;
+		font-family: Alice;
+	}
+	.shop-menu > nav > a:hover {
+		font-family: Alice;
+		font-style: normal;
+		font-weight: normal;
+		background-color: #E3E6EB;
+		transition: all 0.5s ease 0s;
+	}
+	.shop-menu > nav > a > span {
+		font-family: Alice;
+		font-style: normal;
+		font-weight: normal;
+		padding-left: 0.5em;
+		padding-right: 0.5em;
+		margin: auto;
+	}
+	#product-moons-title {
+		grid-column: span 1;
+		margin-top: 1em;
+		margin-bottom: 2em;
+	}
+	#product-planet-title {
+		grid-column: span 1;
+		margin-top: 1em;
+		margin-bottom: 2em;
+	}
+	#product-galaxie-title {
+		grid-column: span 1;
+		margin-top: 1em;
+		margin-bottom: 2em;
 	}
 	.product-planet {
 		height: 350px;
@@ -718,34 +1088,81 @@ html {
 		margin-bottom: 1.0em;
 		margin: 1em;
 	}
-		.img-product {
-			transform: scale(.7);
-		}
-		.product:hover .img-product {
-			transform: scale(0.70) translate(10%, -25%);
-		}
-		.product .product-info {
-			transition: transform .8s ease; 
-		}
-		.product:hover .product-info > p {
-			transition: transform .8s ease; 
-		}
-		.product:hover .product-info > h3 {
-			transition: transform .8s ease; 
-		}
-		.product:hover .product-info > h3 {
-			transform: scale(1.2); 
-			transform: translate(0px, -200px);
-		}
-		.product:hover .product-info > p {
-			transform: scale(1.2); 
-			transform: translate(0px, -200px);
-			padding: 2em;
-		} 
+	.img-product {
+		transform: scale(.7);
+	}
+	.product:hover .img-product {
+		transform: scale(0.70) translate(10%, -25%);
+	}
+	.product .product-info {
+		transition: transform .8s ease; 
+	}
+	.product:hover .product-info > p {
+		transition: transform .8s ease; 
+	}
+	.product:hover .product-info > h3 {
+		transition: transform .8s ease; 
+	}
+	.product:hover .product-info > h3 {
+		transform: scale(1.2); 
+		transform: translate(0px, -200px);
+	}
+	.product:hover .product-info > p {
+		transform: scale(1.2); 
+		transform: translate(0px, -200px);
+		padding: 2em;
+	} 
 }
 	@media only screen and (max-width: 450px) {
 		.shop-box {
 			background: transparent;
+		}
+		.shop-menu {
+			font-family: 'Alice', serif;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 1em;
+			margin-top: 1.2em;
+		} 
+		.shop-menu > nav > a {
+			font-family: Alice;
+			font-style: normal;
+			font-weight: normal;
+			min-width: 200px;
+			align-self: stretch;
+			font-size: 0.9em;
+			text-decoration: none;
+			color: #3F70A4;
+			border: 1px solid #3F70A4;
+			border-radius: 4px;
+			padding: 0.5em 1em 0.5em 1em;
+			margin: 0.5em 0.5em 0.5em 0;
+			font-family: Alice;
+		} 
+		.shop-menu > nav {
+			font-family: Alice;
+			font-style: normal;
+			font-weight: normal;
+			margin: 0.5em 11em 0.5em 11em;
+			display: grid;
+			padding: 1em 1em 1em 1em;
+			grid-template-columns: 1fr;
+			font-family: Alice;
+		}
+		.shop-menu > nav > a:hover {
+			font-family: Alice;
+			font-style: normal;
+			font-weight: normal;
+			background-color: #E3E6EB;
+			transition: all 0.5s ease 0s;
+		}
+		.shop-menu > nav > a > span {
+			font-family: Alice;
+			font-style: normal;
+			font-weight: normal;
+			padding-left: 0.5em;
+			padding-right: 0.5em;
+			margin: auto;
 		}
 		.container {
 			display: grid;
@@ -755,7 +1172,7 @@ html {
 			transform: scale(.9);
 		}
 		.product-planet:hover .img-product {
-			transform: scale(0.70) translate(30%, -25%);
+			transform: scale(0.70) translate(30%, -35%);
 		}
 		.product-planet .product-info {
 			transition: transform .8s ease; 
@@ -768,11 +1185,32 @@ html {
 		}
 		.product-planet:hover .product-info > h3 {
 			transform: scale(1.2); 
-			transform: translate(0px, -255px);
+			transform: translate(0px, -365px);
 		}
 		.product-planet:hover .product-info > p {
 			padding: 2em;
 			transform: scale(1.2); 
-			transform: translate(0px, -320px);
+			transform: translate(0px, -435px);
 		} 
+		.product-moons:hover .img-product {
+			transform: scale(0.70) translate(30%, -35%);
+		}
+		.product-moons .product-info {
+			transition: transform .8s ease; 
+		}
+		.product-moons:hover .product-info > p {
+			transition: transform .8s ease; 
+		}
+		.product-moons:hover .product-info > h3 {
+			transition: transform .8s ease; 
+		}
+		.product-moons:hover .product-info > h3 {
+			transform: scale(1); 
+			transform: translate(0px, -365px);
+		}
+		.product-moons:hover .product-info > p {
+			padding: 2em;
+			transform: scale(1); 
+			transform: translate(0px, -435px);
+		}
 }
