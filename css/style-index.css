@@ -241,7 +241,7 @@ h2 {
 .box-with-backg4 {
 	display: flex;
 	min-height: 50vh;
-	background: url(../img/index/inspiration-index.jpg);
+	background: url(../img/index/inspiration-index.JPG);
 	background-size: cover;
 	background-position: center;
 	flex-direction: column;
